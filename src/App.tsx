@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { BtnChangeLanguage } from "./components/btnChangeLanguage";
 import Projects from "./components/Projects";
 import NotFound from "./components/NotFound/NotFound";
+import Landing from "./components/Landing";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <BtnChangeLanguage />
       <Routes>
         <Route path={"*"} element={<NotFound />} />
-        <Route path={"/"} />
+        <Route path={"/"} element={<Landing />} />
         <Route path={"/projects"} element={<Projects />} />
       </Routes>
     </>

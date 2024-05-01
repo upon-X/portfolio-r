@@ -6,7 +6,7 @@ export interface ChildrenPropsType {
 export type LanguageType = "es" | "en";
 
 export interface ViewTypes {
-  home: { es: any; en: any };
+  landing: { es: any; en: any };
   navbar: { es: any; en: any };
   footer: { es: any; en: any };
   aboutMe: { es: any; en: any };

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { TranslationContext } from "./TranslationContext";
-import { ContentHome } from "../translations/HomeTranslation/contentHome";
+import { ContentLanding } from "../translations/LandingTranslation/contentLanding";
 import { ContentNavbar } from "../translations/NavbarTranslation/contentNavbar";
 import { ContentFooter } from "../translations/FooterTranslation/contentFooter";
 import {
@@ -19,7 +19,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
   >();
 
   useEffect(() => {
-    const HomeModule = ContentHome;
+    const LandingModule = ContentLanding;
     const NavbarModule = ContentNavbar;
     const FooterModule = ContentFooter;
     const AboutMeModule = ContentAboutMe;
@@ -27,7 +27,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
     const ContactModule = ContentContact;
 
     setContent({
-      home: HomeModule,
+      landing: LandingModule,
       navbar: NavbarModule,
       footer: FooterModule,
       aboutMe: AboutMeModule,
