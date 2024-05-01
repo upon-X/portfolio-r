@@ -8,9 +8,13 @@ export default function Presentation() {
   return (
     <div className="flex flex-col items-center ">
       <div className="flex flex-col items-center text-center">
-        <h1 className="uppercase text-6xl font-medium">Valentino Micheloni</h1>
-        <h2 className="text-gray font-semibold text-3xl">
+        <h1 className="uppercase text-8xl font-medium font-juliusFF -mb-8">
+          Valentino Micheloni
+        </h1>
+        <h2 className="flex items-center justify-center gap-1 text-white bg-purple w-full font-semibold text-5xl uppercase font-jostFF">
+          <span className="font-josefinFF">{"<"}</span>
           {content?.landing[language].jobTitle}
+          <span className="font-josefinFF">{">"}</span>
         </h2>
         {/* <div className="flex w-[300px] justify-evenly text-purple text-5xl">
           <a

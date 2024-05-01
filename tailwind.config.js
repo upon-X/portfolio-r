@@ -43,6 +43,12 @@ export default {
         purple: "#9D6FFF",
         purpleDark: "#2F214B",
       },
+      fontFamily: {
+        juliusFF: ["Julius Sans One", "sans-serif"],
+        jostFF: ["Jost", "sans-serif"],
+        figtreeFF: ["Figtree", "sans-serif"],
+        josefinFF: ["Josefin Sans", "sans-serif"],
+      },
     },
   },
   plugins: [],

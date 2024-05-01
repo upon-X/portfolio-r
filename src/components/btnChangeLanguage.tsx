@@ -16,10 +16,10 @@ export const BtnChangeLanguage: React.FC = () => {
     <div className="flex absolute top-4 right-6">
       <button
         onClick={handleLanguageChange}
-        className="flex justify-center items-center"
+        className="flex justify-center items-center w-[40px] h-[40px]"
       >
         {language === "es" ? (
-          <div>
+          <div className="w-[20px] h-[20px] overflow-hidden rounded-full">
             <img
               className="opacity-70 hover:opacity-100 min-w-[30px]"
               src={FlagES}
