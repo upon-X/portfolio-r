@@ -5,9 +5,9 @@ export const Description = () => {
 
   return (
     <div className="flex flex-col gap-6 items-start text-xl leading-8">
-      <h4 className="font-semibold">
+      <h5 className="font-semibold text-2xl">
         {content?.aboutMe[language].shortDesc.title}
-      </h4>
+      </h5>
       <div className="flex flex-col gap-3">
         <p>
           {content?.aboutMe[language].shortDesc.p1First}
@@ -22,6 +22,7 @@ export const Description = () => {
             {content?.aboutMe[language].shortDesc.p2Highlight}
           </span>
           {content?.aboutMe[language].shortDesc.p2Second}
+          {/* LinkedIn link */}
           <a
             target="_blank"
             href={linkedInUrl}

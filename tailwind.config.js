@@ -5,9 +5,9 @@ export default {
     screens: {
       // media queries
       sm: { max: "480px" }, // móbile
-      md: { min: "481px" }, // tablet
-      lg: { min: "769px" }, // laptop
-      xl: { min: "1025px" }, // desktop
+      md: { min: "481px", max: "768px" }, // tablet
+      lg: { min: "769px", max: "1024px" }, // laptop
+      xl: { min: "1025px", max: "1366px" }, // desktop
       "2xl": { min: "1367px" }, // +desktop
     },
     fontSize: {

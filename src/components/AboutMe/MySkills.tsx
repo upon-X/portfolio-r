@@ -30,14 +30,14 @@ export const MySkils = () => {
 
   return (
     <div className="flex flex-col gap-6">
-      <h4 className="font-semibold">
+      <h5 className="font-semibold text-2xl">
         {content?.aboutMe[language].mySkills.title}
-      </h4>
+      </h5>
       <div className="flex flex-wrap gap-3 text-xl select-none">
         {Skills.map((skill, index) => (
           <div
             key={index}
-            className="border-2 border-purple rounded-md px-[0.6rem] py-[0.3rem] font-semibold text-gray hover:bg-purple hover:text-white transition-all"
+            className="border-2 border-purple rounded-md px-[0.6rem] py-[0.3rem] font-semibold text-gray hover:bg-purple hover:text-white hover:-translate-y-1 transition-all"
           >
             {skill}
           </div>

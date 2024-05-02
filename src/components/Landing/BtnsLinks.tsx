@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const BtnsLinks = () => {
   return (
-    <div className="flex gap-10 text-purple">
+    <div className="flex justify-center gap-10 text-purple">
       <Link
         to={"/aboutme"}
         className="flex items-center justify-center p-1 bg-white rounded-md border-4 border-purple
@@ -11,7 +11,7 @@ export const BtnsLinks = () => {
           transition-all
           "
       >
-        <FaRegAddressCard className="w-[2.5rem] h-[2.5rem]" />
+        <FaRegAddressCard className="w-[2.9rem] h-[2.9rem]" />
       </Link>
 
       <Link
@@ -21,7 +21,7 @@ export const BtnsLinks = () => {
           transition-all
           "
       >
-        <FaCode className="w-[2.5rem] h-[2.5rem]" />
+        <FaCode className="w-[2.9rem] h-[2.9rem]" />
       </Link>
 
       <Link
@@ -31,7 +31,7 @@ export const BtnsLinks = () => {
           transition-all
           "
       >
-        <FaRegMessage className="w-[2.5rem] h-[2.5rem]" />
+        <FaRegMessage className="w-[2.9rem] h-[2.9rem]" />
       </Link>
     </div>
   );
