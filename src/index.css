@@ -2,6 +2,7 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 :root {
+  --purple: #9d6fff;
   --FFJulius: "Julius Sans One", sans-serif;
   --FFJost: "Jost", sans-serif;
   --FFFigtree: "Figtree", sans-serif;

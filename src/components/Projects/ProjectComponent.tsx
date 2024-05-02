@@ -9,14 +9,15 @@ type Props = {
 export const ProjectComponent = ({ projectIndex }: Props) => {
   const { content, language } = useTranslation();
   return (
-    <div className=" grid grid-cols-2 min-h-[400px]">
+    <div className=" grid grid-cols-2 min-h-[400px] select-none cursor-grab active:cursor-grabbing">
       <div className="flex flex-col items-start justify-center gap-3 p-10">
         <span className="flex gap-8 ">
-          <p className="text-3xl font-semibold">
+          <p className="text-3xl font-semibold whitespace-nowrap">
             {content?.projects[language].everyProject[projectIndex].title}
           </p>
           <a
             className="text-purple border-[1px] rounded-full text-xl flex justify-center items-center gap-1 font-normal transition-all py-1 px-3 hover:bg-purple hover:text-white hover:border-transparent"
+            target="_blank"
             href={content?.projects[language].everyProject[projectIndex].deploy}
           >
             Deploy

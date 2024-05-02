@@ -12,6 +12,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "autoprefixer": "^10.4.19",
+    "embla-carousel": "^8.0.2",
     "embla-carousel-autoplay": "^8.0.2",
     "embla-carousel-react": "^8.0.2",
     "postcss": "^8.4.38",
