@@ -1,5 +1,5 @@
-import { BtnsLinks } from "./BtnsLinks";
-import Presentation from "./Presentation";
+import { BtnsLinks } from "../components/Landing/BtnsLinks";
+import Presentation from "../components/Landing/Presentation";
 
 export default function Landing() {
   return (

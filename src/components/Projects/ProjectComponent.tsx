@@ -34,7 +34,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           ].skillsUsed.map((skill: string, index: number) => (
             <span
               key={index}
-              className="border-[2px] border-purple rounded-md text-lg py-1 px-2 font-semibold text-gray hover:bg-purple hover:text-white transition-all"
+              className="border-[2px] border-purple rounded-md text-lg py-1 px-2 font-semibold text-gray hover:bg-purple hover:-translate-y-1 hover:text-white transition-all"
             >
               {skill}
               {index <
