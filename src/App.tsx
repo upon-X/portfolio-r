@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { BtnChangeLanguage } from "./components/btnChangeLanguage";
 import Projects from "./components/Projects";
 import NotFound from "./components/NotFound/NotFound";
@@ -9,10 +9,11 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
+  const { pathname } = useLocation();
   return (
     <>
       <BtnChangeLanguage />
-      <Navbar />
+      {pathname !== "/" ? <Navbar /> : null}
       <Routes>
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Landing />} />
@@ -20,7 +21,7 @@ function App() {
         <Route path={"/projects"} element={<Projects />} />
         <Route path={"/contact"} element={<Contact />} />
       </Routes>
-      <Footer />
+      {pathname !== "/" ? <Footer /> : null}
     </>
   );
 }

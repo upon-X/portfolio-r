@@ -6,8 +6,8 @@ export const BtnsLinks = () => {
     <div className="flex justify-center gap-10 text-purple">
       <Link
         to={"/aboutme"}
-        className="flex items-center justify-center p-1 bg-white rounded-md border-4 border-purple
-          hover:-translate-y-2 hover:text-white hover:bg-purple hover:border-purple hover:rounded-lg
+        className="flex items-center justify-center p-2 bg-white rounded-md border-x-4 border-purple
+          hover:-translate-y-2 hover:text-white hover:bg-purple
           transition-all
           "
       >
@@ -16,8 +16,8 @@ export const BtnsLinks = () => {
 
       <Link
         to={"/projects"}
-        className="flex items-center justify-center p-1 bg-white rounded-md border-4 border-purple
-          hover:-translate-y-2 hover:text-white hover:bg-purple hover:border-purple hover:rounded-lg
+        className="flex items-center justify-center p-2 bg-white rounded-md border-x-4 border-purple
+          hover:-translate-y-2 hover:text-white hover:bg-purple
           transition-all
           "
       >
@@ -26,8 +26,8 @@ export const BtnsLinks = () => {
 
       <Link
         to={"/contact"}
-        className="flex items-center justify-center p-1 bg-white rounded-md border-4 border-purple
-          hover:-translate-y-2 hover:text-white hover:bg-purple hover:border-purple hover:rounded-lg
+        className="flex items-center justify-center p-2 bg-white rounded-md border-x-4 border-purple
+          hover:-translate-y-2 hover:text-white hover:bg-purple
           transition-all
           "
       >

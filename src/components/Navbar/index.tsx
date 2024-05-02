@@ -4,7 +4,7 @@ import { useTranslation } from "../../context/TranslationContext";
 export default function Navbar() {
   const { language } = useTranslation();
   return (
-    <nav className="flex text-xl items-center justify-around h-[8vh] font-semibold text-gray uppercase">
+    <nav className="flex text-xl items-center justify-around max-w-screen h-[8vh] font-semibold text-gray uppercase">
       <Link
         to="/"
         className="border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all"
