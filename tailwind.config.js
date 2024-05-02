@@ -30,6 +30,7 @@ export default {
       colors: {
         white: "#FFFFFF",
         black: "#000000",
+        blue: "#0000ff",
         green: "#2c5629",
         gray: "#505050",
         grayLeter: "#7a7a7a",
