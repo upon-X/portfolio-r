@@ -8,7 +8,7 @@ export const ContentContact = {
       email: "Email",
       message: "Leave your message here",
       send: "Send",
-      send2: "Form",
+      sending: "Sending...",
     },
   },
   es: {
@@ -20,7 +20,7 @@ export const ContentContact = {
       email: "Correo electrónico",
       message: "Deja tu mensaje aquí",
       send: "Enviar",
-      send2: "Formulario",
+      sending: "Enviando...",
     },
   },
 };

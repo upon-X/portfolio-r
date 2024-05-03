@@ -1,10 +1,10 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { BtnChangeLanguage } from "./components/btnChangeLanguage";
-import Projects from "./components/Projects";
+import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
-import Contact from "./components/Contact";
-import AboutMe from "./components/AboutMe";
+import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { HolaMundo } from "./pages/HolaMundo";

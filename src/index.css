@@ -23,6 +23,7 @@
     margin: 0;
   }
   section {
+    min-height: 84vh;
     padding: 0 15vw;
   }
   /* Embla Carousel en projects */

@@ -1,7 +1,7 @@
-import { useTranslation } from "../../context/TranslationContext";
-import { Description } from "./Description";
-import { MySkils } from "./MySkills";
-import myPhoto from "../../assets/myphotonobg.png";
+import { useTranslation } from "../context/TranslationContext";
+import { Description } from "../components/AboutMe/Description";
+import { MySkils } from "../components/AboutMe/MySkills";
+import myPhoto from "../assets/myphotonobg.png";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
