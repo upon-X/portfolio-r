@@ -1,5 +1,7 @@
 import { useTranslation } from "../../context/TranslationContext";
-
+import { useEffect } from "react";
+import "aos/dist/aos.css";
+import AOS from "aos";
 export const MySkils = () => {
   const { content, language } = useTranslation();
   const Skills = [
@@ -27,13 +29,18 @@ export const MySkils = () => {
     "Figma",
     "Scrum",
   ];
-
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  });
   return (
     <div className="flex flex-col gap-6">
-      <h5 className="font-semibold text-2xl">
+      <h5 data-aos="fade-left" className="font-semibold text-2xl">
         {content?.aboutMe[language].mySkills.title}
       </h5>
-      <div className="flex flex-wrap gap-3 text-xl select-none">
+      <div
+        data-aos="fade-left"
+        className="flex flex-wrap gap-3 text-xl select-none"
+      >
         {Skills.map((skill, index) => (
           <div
             key={index}

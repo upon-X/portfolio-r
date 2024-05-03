@@ -11,6 +11,7 @@ import {
 import { ContentAboutMe } from "../translations/AboutMeTranslation/contentAboutMe";
 import { ContentProjects } from "../translations/ProjectsTranslation/contentProjects";
 import { ContentContact } from "../translations/ContactTranslation/contentContact";
+import { ContentNotFound } from "../translations/NotFoundTranslation/contentNavbar";
 
 export const ContextProvider = ({ children }: ChildrenPropsType) => {
   const [language, setLanguage] = useState<LanguageType>("es");
@@ -25,6 +26,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
     const AboutMeModule = ContentAboutMe;
     const ProjectsModule = ContentProjects;
     const ContactModule = ContentContact;
+    const NotFoundModule = ContentNotFound;
 
     setContent({
       landing: LandingModule,
@@ -33,6 +35,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
       aboutMe: AboutMeModule,
       projects: ProjectsModule,
       contact: ContactModule,
+      notFound: NotFoundModule,
     });
   }, [language]);
 

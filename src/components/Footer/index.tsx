@@ -7,7 +7,7 @@ export default function Footer() {
   const githubUrl = "https://github.com/upon-X";
 
   return (
-    <footer className="flex justify-center items-center gap-4 bg-black text-white text-lg md:text-base sm:text-base h-[8vh] p-6 mt-16">
+    <footer className="flex justify-center items-center gap-4 bg-black text-white text-lg md:text-base sm:text-base h-[8vh] p-6">
       <p>{content?.footer[language].rightsReserved}</p>
       <div className="flex gap-3 text-white text-3xl md:text-2xl sm:text-2xl">
         <a target="_blank" href={githubUrl}>

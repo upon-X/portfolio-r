@@ -1,27 +1,41 @@
 import { Route, Routes, useLocation } from "react-router-dom";
 import { BtnChangeLanguage } from "./components/btnChangeLanguage";
 import Projects from "./components/Projects";
-import NotFound from "./components/NotFound/NotFound";
-import Landing from "./pages";
+import NotFound from "./pages/NotFound";
+import Landing from "./pages/Landing";
 import Contact from "./components/Contact";
 import AboutMe from "./components/AboutMe";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { HolaMundo } from "./pages/HolaMundo";
+import { HelloWorld } from "./pages/HelloWorld";
 
 function App() {
   const { pathname } = useLocation();
   return (
     <>
-      <BtnChangeLanguage />
-      {pathname !== "/" ? <Navbar /> : null}
+      {pathname !== "/helloworld" && pathname !== "/holamundo" ? (
+        <BtnChangeLanguage />
+      ) : null}
+      {pathname !== "/" &&
+      pathname !== "/helloworld" &&
+      pathname !== "/holamundo" ? (
+        <Navbar />
+      ) : null}
       <Routes>
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Landing />} />
         <Route path={"/aboutme"} element={<AboutMe />} />
         <Route path={"/projects"} element={<Projects />} />
         <Route path={"/contact"} element={<Contact />} />
+        <Route path={"/helloworld"} element={<HelloWorld />} />
+        <Route path={"/holamundo"} element={<HolaMundo />} />
       </Routes>
-      {pathname !== "/" ? <Footer /> : null}
+      {pathname !== "/" &&
+      pathname !== "/helloworld" &&
+      pathname !== "/holamundo" ? (
+        <Footer />
+      ) : null}
     </>
   );
 }

@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../../context/TranslationContext";
 
 export default function Navbar() {
   const { language } = useTranslation();
+  const { pathname } = useLocation();
+
   return (
     <nav className="flex text-xl items-center justify-around max-w-screen h-[8vh] font-semibold text-gray uppercase select-none">
       <Link
@@ -15,21 +17,27 @@ export default function Navbar() {
         {/* About Me Link */}
         <Link
           to="/aboutme"
-          className="border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all"
+          className={`border-b-2 border-purple px-3 py-1   transition-all ${
+            pathname === "/aboutme" ? "border-b-8" : null
+          }`}
         >
           {language === "es" ? "Sobre Mi" : "About Me"}
         </Link>
         {/* Projects Link */}
         <Link
           to="/projects"
-          className="border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all"
+          className={`border-b-2 border-purple px-3 py-1  transition-all ${
+            pathname === "/projects" ? "border-b-8 " : null
+          }`}
         >
           {language === "es" ? "Proyectos" : "Projects"}
         </Link>
         {/* Contact Link */}
         <Link
           to="/contact"
-          className="border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all"
+          className={`border-b-2 border-purple px-3 py-1  transition-all ${
+            pathname === "/contact" ? "border-b-8 " : null
+          }`}
         >
           {language === "es" ? "Contacto" : "Contact"}
         </Link>
