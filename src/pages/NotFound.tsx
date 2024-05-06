@@ -18,7 +18,7 @@ export default function NotFound() {
             4
           </span>
         </div>
-        <span className="text-[2rem]">{pathname}</span>
+        <span className="text-[2rem]">" {pathname} "</span>
         <p className="text-[2rem]">{content?.notFound[language].title}</p>
       </div>
     </div>

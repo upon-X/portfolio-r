@@ -1,7 +1,7 @@
 import { useTranslation } from "../../context/TranslationContext";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
-export default function Footer() {
+export const Footer = () => {
   const { language, content } = useTranslation();
   const linkedinUrl = "https://www.linkedin.com/in/valentino-micheloni/";
   const githubUrl = "https://github.com/upon-X";
@@ -19,4 +19,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};

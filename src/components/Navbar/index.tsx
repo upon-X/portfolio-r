@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../../context/TranslationContext";
 
-export default function Navbar() {
+export const Navbar = () => {
   const { language } = useTranslation();
   const { pathname } = useLocation();
 
@@ -44,4 +44,4 @@ export default function Navbar() {
       </div>
     </nav>
   );
-}
+};

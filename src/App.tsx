@@ -5,10 +5,10 @@ import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import { HolaMundo } from "./pages/HolaMundo";
-import { HelloWorld } from "./pages/HelloWorld";
+import { Navbar } from "./components/Navbar";
+import { Footer } from "./components/Footer";
+import HolaMundo from "./pages/HolaMundo";
+import HelloWorld from "./pages/HelloWorld";
 
 function App() {
   const { pathname } = useLocation();
