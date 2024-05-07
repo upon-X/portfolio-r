@@ -78,7 +78,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full 2xl:col-span-2">
         <label>{content?.contact[language].form.message}</label>
         <textarea
-          className="min-h-[100px] max-h-[200px] bg-[#fafafa] text-base p-2"
+          className="min-h-[200px] max-h-[200px] bg-[#fafafa] text-base p-2"
           id="form_message"
           name="form_message"
           value={message}
@@ -86,7 +86,7 @@ export const ContactForm = () => {
           minLength={10}
           maxLength={1200}
           required
-        ></textarea>
+        />
       </div>
       <div className=" flex justify-center col-start-2 ">
         <button
