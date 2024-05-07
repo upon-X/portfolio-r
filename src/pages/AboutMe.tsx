@@ -23,8 +23,11 @@ export default function AboutMe() {
       <h4 data-aos="fade-down" className="text-center text-2xl">
         {content?.aboutMe[language].subtitle}
       </h4>
-      <div className="w-[230px] overflow-hidden rounded-full border-4 border-purple hover:bg-purple hover:scale-105 hover:border-white transition-all">
-        <img data-aos="fade-in" src={myPhoto} alt="Valentino Micheloni Photo" />
+      <div
+        data-aos="fade-in"
+        className="w-[230px] overflow-hidden rounded-full border-4 border-purple"
+      >
+        <img src={myPhoto} alt="Valentino Micheloni Photo" />
       </div>
       <div className="grid grid-cols-2 gap-20">
         <Description />

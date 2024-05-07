@@ -29,11 +29,11 @@ export const ContactForm = () => {
         .send(serviceId, templateId, templateParams, publicKey)
         .then((res) => {
           console.log(res);
-          sendAlert(language === "es" ? "bien" : "good");
           setName("");
           setEmail("");
           setMessage("");
           setIsSubmitting(false);
+          sendAlert(language === "es" ? "bien" : "good");
         })
         .catch((error) => {
           sendAlert(language === "es" ? "mal" : "bad");
