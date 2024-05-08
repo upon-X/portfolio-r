@@ -9,7 +9,7 @@ type Props = {
 export const ProjectComponent = ({ projectIndex }: Props) => {
   const { content, language } = useTranslation();
   return (
-    <div className=" grid grid-cols-2 min-h-[400px] select-none cursor-grab active:cursor-grabbing">
+    <div className=" grid grid-cols-2 min-h-[400px] select-none">
       <div className="flex flex-col items-start justify-center gap-3 p-10">
         <span className="flex gap-8 ">
           <p className="text-3xl font-semibold whitespace-nowrap">
@@ -48,7 +48,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           ))}
         </div>
       </div>
-      <div className=" flex items-center ml-[-10rem] overflow-hidden">
+      <div className=" flex items-center ml-[-12rem] overflow-hidden">
         <img
           className="z-[-10]"
           src={content?.projects[language].everyProject[projectIndex].image}

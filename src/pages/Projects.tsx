@@ -1,8 +1,9 @@
 import { useTranslation } from "../context/TranslationContext";
-import CarouselOfProjects from "../components/EmblaCarousel";
+// import CarouselOfProjects from "../components/EmblaCarousel";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { ProjectComponent } from "../components/Projects/ProjectComponent";
 
 export default function Projects() {
   const { content, language } = useTranslation();
@@ -10,7 +11,7 @@ export default function Projects() {
     AOS.init({ duration: 1000 });
   });
   return (
-    <section className="flex flex-col gap-10 items-center">
+    <section className="flex flex-col gap-10 items-center mb-16">
       <h3
         data-aos="fade-down"
         className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold"
@@ -22,7 +23,16 @@ export default function Projects() {
         {content?.projects[language].subtitle}
       </h4>
       <div data-aos="fade-up">
-        <CarouselOfProjects />
+        {/* <CarouselOfProjects /> */}
+        <ProjectComponent projectIndex={0} />
+        <hr className="text-[#e9e9e9] border-2" />
+        <ProjectComponent projectIndex={1} />
+        <hr className="text-[#e9e9e9] border-2" />
+        <ProjectComponent projectIndex={2} />
+        <hr className="text-[#e9e9e9] border-2" />
+        <ProjectComponent projectIndex={3} />
+        <hr className="text-[#e9e9e9] border-2" />
+        <ProjectComponent projectIndex={4} />
       </div>
     </section>
   );
