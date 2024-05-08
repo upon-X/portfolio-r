@@ -25,7 +25,7 @@ export default function AboutMe() {
       </h4>
       <div
         data-aos="fade-in"
-        className="w-[230px] overflow-hidden rounded-full border-4 border-purple"
+        className="w-[230px] overflow-hidden rounded-full border-4 border-purple "
       >
         <img src={myPhoto} alt="Valentino Micheloni Photo" />
       </div>

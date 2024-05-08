@@ -22,17 +22,20 @@ export default function Projects() {
       <h4 data-aos="fade-down" className="text-center text-2xl">
         {content?.projects[language].subtitle}
       </h4>
-      <div data-aos="fade-up">
-        {/* <CarouselOfProjects /> */}
-        <ProjectComponent projectIndex={0} />
-        <hr className="text-[#e9e9e9] border-2" />
-        <ProjectComponent projectIndex={1} />
-        <hr className="text-[#e9e9e9] border-2" />
-        <ProjectComponent projectIndex={2} />
-        <hr className="text-[#e9e9e9] border-2" />
-        <ProjectComponent projectIndex={3} />
-        <hr className="text-[#e9e9e9] border-2" />
-        <ProjectComponent projectIndex={4} />
+      <div>
+        {content?.projects[language].everyProject.map(
+          (_project: undefined, index: number) => {
+            return (
+              <div data-aos="fade-up">
+                <ProjectComponent projectIndex={index} />
+                {index !==
+                  content.projects[language].everyProject.length - 1 && (
+                  <hr className="text-[#e9e9e9] border-[1px]" />
+                )}
+              </div>
+            );
+          }
+        )}
       </div>
     </section>
   );

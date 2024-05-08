@@ -53,24 +53,26 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full">
         <label>{content?.contact[language].form.name}</label>
         <input
-          className="input_name bg-[#fafafa]"
+          className="text-lg bg-[#fafafa] focus:outline-purple outline-purple"
           type="text"
           id="form_name"
           name="form_name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          maxLength={100}
           required
         />
       </div>
       <div className="flex flex-col gap-1 w-full">
         <label>{content?.contact[language].form.email}</label>
         <input
-          className="input_email bg-[#fafafa]"
+          className="text-lg bg-[#fafafa] focus:outline-purple"
           type="email"
           id="form_email"
           name="form_email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          maxLength={100}
           required
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
@@ -78,7 +80,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full 2xl:col-span-2">
         <label>{content?.contact[language].form.message}</label>
         <textarea
-          className="min-h-[200px] max-h-[200px] bg-[#fafafa] text-base p-2"
+          className="text-lg min-h-[200px] max-h-[200px] bg-[#fafafa] outline-purple focus:outline-purple p-2 "
           id="form_message"
           name="form_message"
           value={message}

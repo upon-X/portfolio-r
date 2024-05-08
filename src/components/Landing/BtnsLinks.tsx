@@ -13,7 +13,7 @@ export const BtnsLinks = () => {
   return (
     <div data-aos="fade-up" className="flex justify-center gap-10 text-purple">
       <Link
-        to={"/aboutme"}
+        to={"/about-me"}
         className="flex flex-col items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
           transition-all
@@ -21,8 +21,8 @@ export const BtnsLinks = () => {
       >
         <FaRegAddressCard className="w-[3rem] h-[3rem]" />
         <p
-          className=" absolute opacity-0 text-xl whitespace-nowrap text-purple font-bold
-        group-hover:opacity-100 group-hover:-mb-28 transition-all uppercase
+          className="hidden absolute text-xl whitespace-nowrap text-purple font-bold
+        group-hover:block group-hover:-mb-[6.5rem] transition-all uppercase
         "
         >
           {language === "es" ? "Sobre mi" : "About me"}
@@ -38,8 +38,8 @@ export const BtnsLinks = () => {
       >
         <FaCode className="w-[3rem] h-[3rem]" />
         <p
-          className=" absolute opacity-0 text-xl whitespace-nowrap text-purple font-bold
-        group-hover:opacity-100 group-hover:-mb-28 transition-all uppercase
+          className="hidden absolute text-xl whitespace-nowrap text-purple font-bold
+        group-hover:block group-hover:-mb-[6.5rem] transition-all uppercase
         "
         >
           {language === "es" ? "Proyectos" : "Projects"}
@@ -55,8 +55,8 @@ export const BtnsLinks = () => {
       >
         <FaRegMessage className="w-[3rem] h-[3rem]" />
         <p
-          className=" absolute opacity-0 text-xl whitespace-nowrap text-purple font-bold
-        group-hover:opacity-100 group-hover:-mb-28 transition-all uppercase
+          className="hidden absolute text-xl whitespace-nowrap text-purple font-bold
+        group-hover:block group-hover:-mb-[6.5rem] transition-all uppercase
         "
         >
           {language === "es" ? "Contacto" : "Contact"}

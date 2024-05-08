@@ -16,9 +16,9 @@ export const Navbar = () => {
       <div className="flex items-center gap-3">
         {/* About Me Link */}
         <Link
-          to="/aboutme"
+          to="/about-me"
           className={`border-b-2 border-purple px-3 py-1   transition-all ${
-            pathname === "/aboutme" ? "border-b-8" : null
+            pathname === "/about-me" ? "border-b-8" : null
           }`}
         >
           {language === "es" ? "Sobre Mi" : "About Me"}

@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../context/TranslationContext";
 
 export default function NotFound() {
@@ -20,6 +20,13 @@ export default function NotFound() {
         </div>
         <span className="text-[2rem]">" {pathname} "</span>
         <p className="text-[2rem]">{content?.notFound[language].title}</p>
+        <p className="text-[1.2rem]">{content?.notFound[language].tryUrls}</p>
+        <div className="flex flex-col text-purple text-[1.2rem]">
+          <Link to={"/"}>"/"</Link>
+          <Link to={"/about-me"}>"/about-me"</Link>
+          <Link to={"/projects"}>"/projects"</Link>
+          <Link to={"/contact"}>"/contact"</Link>
+        </div>
       </div>
     </div>
   );

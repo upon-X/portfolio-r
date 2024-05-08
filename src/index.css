@@ -42,4 +42,8 @@
   input {
     padding: 0.3rem;
   }
+  label {
+    font-size: 1.05rem;
+    font-weight: 600;
+  }
 }

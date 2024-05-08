@@ -14,7 +14,7 @@ export const ContentContact = {
   es: {
     title: "Contacto",
     subtitle:
-      "Enviame un mensaje rellenando el formulario de aqui abajo y estare en contacto lo mas pronto posible",
+      "Envíame un mensaje rellenando el formulario de aquí abajo y estaré en contacto lo más pronto posible",
     form: {
       name: "Nombre",
       email: "Correo electrónico",

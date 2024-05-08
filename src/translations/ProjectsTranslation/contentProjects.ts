@@ -31,15 +31,7 @@ export const ContentProjects = {
           "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087310/Portfolio/ntGreekMithologyv2_lagvcp.webp",
         deploy: "https://greekmythology.vercel.app/",
       },
-      {
-        title: "Button Counter",
-        description:
-          "An application that allows you to create clicking buttons. Learned back-end basics.",
-        skillsUsed: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
-        image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087315/Portfolio/ntBtnCounterv2_d1qmmp.webp",
-        deploy: "https://buttons-counter-app.vercel.app/",
-      },
+
       {
         title: "Snake Game",
         description:
@@ -92,15 +84,7 @@ export const ContentProjects = {
           "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087310/Portfolio/ntGreekMithologyv2_lagvcp.webp",
         deploy: "https://greekmythology.vercel.app/",
       },
-      {
-        title: "Button Counter",
-        description:
-          "Aplicación web con la cual creas botones que registran sus clicks, me ayudó a entender backend.",
-        skillsUsed: ["HTML", "CSS", "JavaScript", "React", "Node.js"],
-        image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087315/Portfolio/ntBtnCounterv2_d1qmmp.webp",
-        deploy: "https://buttons-counter-app.vercel.app/",
-      },
+
       {
         title: "Snake Game",
         description:
