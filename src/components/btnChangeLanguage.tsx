@@ -16,7 +16,7 @@ export const BtnChangeLanguage: React.FC = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="flex absolute top-6 right-8 scale-150 select-none">
+    <div className="flex fixed top-6 right-8 scale-150 select-none">
       <button
         data-aos="fade-in"
         onClick={handleLanguageChange}

@@ -16,7 +16,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
             {content?.projects[language].everyProject[projectIndex].title}
           </p>
           <a
-            className="text-purple border-[1px] rounded-full text-xl flex justify-center items-center gap-1 font-normal transition-all py-1 px-3 hover:bg-purple hover:text-white hover:border-transparent"
+            className="text-purple border-[1px] rounded-full text-xl flex justify-center items-center gap-2 font-normal transition-all px-4 hover:bg-purple hover:text-white hover:border-transparent"
             target="_blank"
             href={content?.projects[language].everyProject[projectIndex].deploy}
           >
@@ -35,7 +35,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           ].skillsUsed.map((skill: string, index: number) => (
             <span
               key={index}
-              className="border-[2px] border-purple rounded-md text-lg py-1 px-2 font-semibold text-gray hover:bg-purple hover:-translate-y-1 hover:text-white transition-all"
+              className="border-2 border-purple rounded-md text-lg py-1 px-2 font-semibold text-gray hover:bg-purple hover:-translate-y-1 hover:text-white transition-all"
             >
               {skill}
               {index <
@@ -48,9 +48,9 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           ))}
         </div>
       </div>
-      <div className=" flex items-center ml-[-12rem] overflow-hidden">
+      <div className="2xl:scale-90 flex items-center justify-end overflow-hidden">
         <img
-          className="z-[-10]"
+          className="-z-10"
           src={content?.projects[language].everyProject[projectIndex].image}
         />
       </div>

@@ -19,7 +19,7 @@ export const ContentProjects = {
           "PostgreSQL",
         ],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087315/Portfolio/ntVehibuyv2_beexos.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281645/Portfolio/new%20notebooks/ntbookVehibuy_kv4gpu.png",
         deploy: "https://vehibuy-rho.vercel.app",
       },
       {
@@ -28,7 +28,7 @@ export const ContentProjects = {
           "In this project, I narrate and describe the best stories and characters from Greek Mythology. I put a lot of care into it as I am a fan myself, which is why it is still in development.",
         skillsUsed: ["HTML", "CSS", "JavaScript", "React", "Redux"],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087310/Portfolio/ntGreekMithologyv2_lagvcp.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281644/Portfolio/new%20notebooks/ntbookGreekWorld_weit3i.png",
         deploy: "https://greekmythology.vercel.app/",
       },
 
@@ -38,7 +38,7 @@ export const ContentProjects = {
           'To better understand the DOM and improve my JavaScript skills, I recreated the iconic video game "Snake".',
         skillsUsed: ["HTML", "CSS", "JavaScript"],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087310/Portfolio/ntSnakeGamev2_apsmcu.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281644/Portfolio/new%20notebooks/ntbookSnakeGame_pptxcb.png",
         deploy: "https://snake-game-responsive.vercel.app/",
       },
       {
@@ -47,7 +47,7 @@ export const ContentProjects = {
           "In this app, I use two APIs to display all the time zones for each country and their respective flag.",
         skillsUsed: ["HTML", "CSS", "TypeScript"],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087311/Portfolio/ntTimeZonev2_ljq2mi.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281646/Portfolio/new%20notebooks/ntbookTimeZone_vmu54d.png",
         deploy: "https://country-time.vercel.app/",
       },
     ],
@@ -72,7 +72,7 @@ export const ContentProjects = {
           "PostgreSQL",
         ],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087315/Portfolio/ntVehibuyv2_beexos.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281645/Portfolio/new%20notebooks/ntbookVehibuy_kv4gpu.png",
         deploy: "https://vehibuy-rho.vercel.app",
       },
       {
@@ -81,26 +81,26 @@ export const ContentProjects = {
           "En este proyecto, relato y describo las más famosas historias de la mitologia griega. Al ser un fan de esta, le doy mucho cariño y por eso lo sigo desarrollando.",
         skillsUsed: ["HTML", "CSS", "JavaScript", "React", "Redux"],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087310/Portfolio/ntGreekMithologyv2_lagvcp.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281644/Portfolio/new%20notebooks/ntbookGreekWorld_weit3i.png",
         deploy: "https://greekmythology.vercel.app/",
       },
 
       {
         title: "Snake Game",
         description:
-          'Para un mayor entedimiento del DOM y mejorar mis habilidades en JavaScript, recree el iconico videojuego "Snake".',
+          'Para un mayor entedimiento del DOM y mejorar mis habilidades en JavaScript, recree el icónico videojuego "Snake".',
         skillsUsed: ["HTML", "CSS", "JavaScript"],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087310/Portfolio/ntSnakeGamev2_apsmcu.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281644/Portfolio/new%20notebooks/ntbookSnakeGame_pptxcb.png",
         deploy: "https://snake-game-responsive.vercel.app/",
       },
       {
         title: "Country Time",
         description:
-          "En esta app utilizo dos APIs para mostrar todos los horarios de cada país y su respectiva bandera.",
+          "En esta app utilizo dos APIs para mostrar todos los horarios de cada país y su respectiva bandera. Con un leve filtro alfabetico.",
         skillsUsed: ["HTML", "CSS", "TypeScript"],
         image:
-          "https://res.cloudinary.com/dzhiauyws/image/upload/v1714087311/Portfolio/ntTimeZonev2_ljq2mi.webp",
+          "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281646/Portfolio/new%20notebooks/ntbookTimeZone_vmu54d.png",
         deploy: "https://country-time.vercel.app/",
       },
     ],

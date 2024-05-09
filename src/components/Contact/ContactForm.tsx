@@ -93,7 +93,7 @@ export const ContactForm = () => {
       <div className=" flex justify-center col-start-2 ">
         <button
           type="submit"
-          className="px-14 py-2 uppercase font-figtreeFF font-semibold transition-all 2xl:w-full
+          className="px-14 py-2 uppercase font-figtreeFF font-semibold transition-all 2xl:w-full outline-purple
           active:scale-95 
           border-2 border-purple rounded-lg hover:bg-purple hover:text-white
         "

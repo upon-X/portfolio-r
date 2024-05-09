@@ -22,7 +22,7 @@ export default function Projects() {
       <h4 data-aos="fade-down" className="text-center text-2xl">
         {content?.projects[language].subtitle}
       </h4>
-      <div>
+      <div className="flex flex-col gap-10">
         {content?.projects[language].everyProject.map(
           (_project: undefined, index: number) => {
             return (
@@ -30,7 +30,7 @@ export default function Projects() {
                 <ProjectComponent projectIndex={index} />
                 {index !==
                   content.projects[language].everyProject.length - 1 && (
-                  <hr className="text-[#e9e9e9] border-[1px]" />
+                  <hr className="mt-8 text-[#e9e9e9] border-[1px]" />
                 )}
               </div>
             );

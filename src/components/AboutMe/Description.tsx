@@ -11,19 +11,22 @@ export const Description = () => {
   });
 
   return (
-    <div className="flex flex-col gap-6 items-start text-xl leading-8">
-      <h5 data-aos="fade-right" className="font-semibold text-2xl">
+    <div
+      data-aos="fade-right"
+      className="flex flex-col gap-6 items-start text-xl leading-8"
+    >
+      <h5 className="font-semibold text-2xl">
         {content?.aboutMe[language].shortDesc.title}
       </h5>
       <div className="flex flex-col gap-3">
-        <p data-aos="fade-right">
+        <p>
           {content?.aboutMe[language].shortDesc.p1First}
           <span className="font-semibold text-gray">
             {content?.aboutMe[language].shortDesc.p1Highlight}
           </span>
           {content?.aboutMe[language].shortDesc.p1Last}
         </p>
-        <p data-aos="fade-right">
+        <p>
           {content?.aboutMe[language].shortDesc.p2First}
           <span className="font-semibold text-gray">
             {content?.aboutMe[language].shortDesc.p2Highlight}
@@ -39,7 +42,7 @@ export const Description = () => {
           </a>
           {content?.aboutMe[language].shortDesc.p2Last}
         </p>
-        <p data-aos="fade-right">
+        <p>
           {content?.aboutMe[language].shortDesc.p3First}
           <span className="font-semibold text-gray">
             {content?.aboutMe[language].shortDesc.p3Highlight}
