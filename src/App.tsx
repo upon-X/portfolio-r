@@ -9,6 +9,7 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import HolaMundo from "./pages/HolaMundo";
 import HelloWorld from "./pages/HelloWorld";
+import SecretGame from "./pages/SecretGame";
 
 function App() {
   const { pathname } = useLocation();
@@ -19,6 +20,7 @@ function App() {
       ) : null}
       {pathname !== "/" &&
       pathname !== "/helloworld" &&
+      pathname !== "/secret-game" &&
       pathname !== "/holamundo" ? (
         <Navbar />
       ) : null}
@@ -30,9 +32,11 @@ function App() {
         <Route path={"/contact"} element={<Contact />} />
         <Route path={"/helloworld"} element={<HelloWorld />} />
         <Route path={"/holamundo"} element={<HolaMundo />} />
+        <Route path={"/secret-game"} element={<SecretGame />} />
       </Routes>
       {pathname !== "/" &&
       pathname !== "/helloworld" &&
+      pathname !== "/secret-game" &&
       pathname !== "/holamundo" ? (
         <Footer />
       ) : null}

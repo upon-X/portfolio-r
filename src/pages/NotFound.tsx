@@ -1,11 +1,12 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../context/TranslationContext";
+import { Secret } from "../components/Secret/btnToSecret";
 
 export default function NotFound() {
   const { language, content } = useTranslation();
   const { pathname } = useLocation();
   return (
-    <div className="h-[84vh] select-none">
+    <section className="h-[84vh] select-none">
       <div className="flex justify-center items-center flex-col">
         <div>
           <span className="text-[10rem] hover:text-purple transition-all">
@@ -27,7 +28,8 @@ export default function NotFound() {
           <Link to={"/projects"}>"/projects"</Link>
           <Link to={"/contact"}>"/contact"</Link>
         </div>
+        <Secret />
       </div>
-    </div>
+    </section>
   );
 }
