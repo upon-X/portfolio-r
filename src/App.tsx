@@ -30,8 +30,8 @@ function App() {
         <Route path={"/about-me"} element={<AboutMe />} />
         <Route path={"/projects"} element={<Projects />} />
         <Route path={"/contact"} element={<Contact />} />
-        <Route path={"/helloworld"} element={<HelloWorld />} />
         <Route path={"/holamundo"} element={<HolaMundo />} />
+        <Route path={"/helloworld"} element={<HelloWorld />} />
         <Route path={"/secret-game"} element={<SecretGame />} />
       </Routes>
       {pathname !== "/" &&

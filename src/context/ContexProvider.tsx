@@ -12,6 +12,7 @@ import { ContentAboutMe } from "../translations/AboutMeTranslation/contentAboutM
 import { ContentProjects } from "../translations/ProjectsTranslation/contentProjects";
 import { ContentContact } from "../translations/ContactTranslation/contentContact";
 import { ContentNotFound } from "../translations/NotFoundTranslation/contentNavbar";
+import { ContentSecretGame } from "../translations/SecretGame/contentSecretGame";
 
 export const ContextProvider = ({ children }: ChildrenPropsType) => {
   const [language, setLanguage] = useState<LanguageType>("es");
@@ -27,6 +28,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
     const ProjectsModule = ContentProjects;
     const ContactModule = ContentContact;
     const NotFoundModule = ContentNotFound;
+    const SecretGameModule = ContentSecretGame;
 
     setContent({
       landing: LandingModule,
@@ -36,6 +38,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
       projects: ProjectsModule,
       contact: ContactModule,
       notFound: NotFoundModule,
+      secretGame: SecretGameModule,
     });
   }, [language]);
 

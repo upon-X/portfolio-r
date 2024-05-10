@@ -13,6 +13,7 @@ export interface ViewTypes {
   projects: { es: any; en: any };
   contact: { es: any; en: any };
   notFound: { es: any; en: any };
+  secretGame: { es: any; en: any };
 }
 
 export interface TranslationContextType {
