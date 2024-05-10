@@ -12,7 +12,6 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "aos": "^2.3.4",
-    "atropos": "^2.0.2",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "embla-carousel": "^8.0.2",
