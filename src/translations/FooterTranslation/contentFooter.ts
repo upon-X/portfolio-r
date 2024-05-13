@@ -1,8 +1,8 @@
 export const ContentFooter = {
   en: {
-    rightsReserved: "© 2024 Valentino Micheloni. All rights reserved",
+    rightsReserved: "2024 Valentino Micheloni",
   },
   es: {
-    rightsReserved: "© 2024 Valentino Micheloni. Todos los derechos reservados",
+    rightsReserved: "2024 Valentino Micheloni",
   },
 };

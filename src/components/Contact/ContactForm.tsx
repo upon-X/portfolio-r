@@ -3,12 +3,13 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "../../context/TranslationContext";
 import { sendAlert } from "../sweetAlerts";
+import { useTheme } from "../../context/ThemeContext";
 
 export const ContactForm = () => {
   const serviceId = "service_aa96h9p";
   const templateId = "template_ge9fviy";
   const publicKey = "lj12FtNYFUx2xuGv1";
-
+  const { theme } = useTheme();
   const { language, content } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -46,14 +47,17 @@ export const ContactForm = () => {
     <form
       id="form"
       onSubmit={handleSubmit}
-      className="flex flex-col items-end gap-4 bg-white h-[450px] text-xl rounded-lg shadow-lg p-8
+      className={`flex flex-col items-end gap-4 bg-white h-[450px] text-xl rounded-lg shadow-lg p-8
       2xl:w-[800px] 2xl:grid 2xl:grid-cols-2 2xl:grid-row-3
-      "
+      ${theme === "light" ? "" : "bg-[#2c2c2c]"}
+      `}
     >
       <div className="flex flex-col gap-1 w-full">
         <label>{content?.contact[language].form.name}</label>
         <input
-          className="text-lg bg-[#fafafa] focus:outline-purple outline-purple"
+          className={`text-lg rounded-sm ${
+            theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
+          } focus:outline-purple outline-purple`}
           type="text"
           id="form_name"
           name="form_name"
@@ -66,7 +70,9 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full">
         <label>{content?.contact[language].form.email}</label>
         <input
-          className="text-lg bg-[#fafafa] focus:outline-purple"
+          className={`text-lg rounded-sm ${
+            theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
+          } focus:outline-purple outline-purple`}
           type="email"
           id="form_email"
           name="form_email"
@@ -80,7 +86,9 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full 2xl:col-span-2">
         <label>{content?.contact[language].form.message}</label>
         <textarea
-          className="text-lg min-h-[200px] max-h-[200px] bg-[#fafafa] outline-purple focus:outline-purple p-2 resize-none"
+          className={`text-lg rounded-sm min-h-[200px] max-h-[200px]  outline-purple focus:outline-purple p-2 resize-none
+          ${theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"}
+          `}
           id="form_message"
           name="form_message"
           value={message}

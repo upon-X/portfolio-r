@@ -7,8 +7,6 @@ export const sendAlert = (r: string) => {
         text: `Your message was sent succesfully!`,
         icon: "success",
         confirmButtonText: "Ok",
-      }).then((isConfirmed) => {
-        if (isConfirmed) location.reload();
       });
       break;
     case "bad":
