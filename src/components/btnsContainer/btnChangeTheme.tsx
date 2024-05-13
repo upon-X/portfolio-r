@@ -10,8 +10,15 @@ export const BtnChangeTheme: React.FC = () => {
   };
 
   return (
-    <button onClick={handleThemeToggle} className="text-xl">
-      {theme === "light" ? <FaMoon /> : <FaSun className="text-white" />}
+    <button
+      onClick={handleThemeToggle}
+      className={`text-2xl rounded-full p-1 group`}
+    >
+      {theme === "light" ? (
+        <FaMoon className="text-darkTheme group-hover:text-purple" />
+      ) : (
+        <FaSun className="text-white group-hover:text-purple" />
+      )}
     </button>
   );
 };

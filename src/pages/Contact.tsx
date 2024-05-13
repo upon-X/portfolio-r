@@ -16,13 +16,13 @@ export default function Contact() {
     ${theme === "light" ? "" : "bg-darkTheme text-white"}
     `}
     >
-      <h3
+      {/* <h3
         data-aos="fade-down"
         className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold"
       >
         {content?.contact[language].title}
         <span className="w-[100px] border-b-[6px] rounded-full border-purple text-transparent"></span>
-      </h3>
+      </h3> */}
       <h4 data-aos="fade-down" className="text-center text-2xl">
         {content?.contact[language].subtitle}
       </h4>
