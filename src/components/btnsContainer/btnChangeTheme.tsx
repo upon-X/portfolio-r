@@ -1,5 +1,5 @@
 import React from "react";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../../context/ThemeContext";
 import { FaMoon, FaSun } from "react-icons/fa6";
 
 export const BtnChangeTheme: React.FC = () => {

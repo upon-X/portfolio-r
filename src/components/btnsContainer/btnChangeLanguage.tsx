@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from "react";
-import { TranslationContext } from "../context/TranslationContext"; // Verifica que el nombre del archivo sea correcto.
-import { LanguageType } from "../types/interfaceContext";
+import { TranslationContext } from "../../context/TranslationContext"; // Verifica que el nombre del archivo sea correcto.
+import { LanguageType } from "../../types/interfaceContext";
 import FlagES from "/flagES.webp";
 import FlagGB from "/flagGB.webp";
 import "aos/dist/aos.css";

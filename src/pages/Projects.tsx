@@ -4,14 +4,20 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { ProjectComponent } from "../components/Projects/ProjectComponent";
+import { useTheme } from "../context/ThemeContext";
 
 export default function Projects() {
   const { content, language } = useTranslation();
+  const { theme } = useTheme();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   });
   return (
-    <section className="flex flex-col gap-10 items-center py-10">
+    <section
+      className={`flex flex-col gap-10 items-center py-10
+    ${theme === "light" ? "" : "bg-darkTheme text-white"}
+    `}
+    >
       <h3
         data-aos="fade-down"
         className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold"
@@ -30,7 +36,11 @@ export default function Projects() {
                 <ProjectComponent projectIndex={index} />
                 {index !==
                   content.projects[language].everyProject.length - 1 && (
-                  <hr className="mt-8 text-[#e9e9e9] border-[1px]" />
+                  <hr
+                    className={`mt-8 ${
+                      theme === "light" ? "text-[#e9e9e9]" : "text-[#4d4d4d]"
+                    } border-[1px]`}
+                  />
                 )}
               </div>
             );
