@@ -9,7 +9,7 @@ export default function Contact() {
     AOS.init({ duration: 1000 });
   });
   return (
-    <section className="flex flex-col gap-10 items-center ">
+    <section className="flex flex-col gap-10 items-center py-10">
       <h3
         data-aos="fade-down"
         className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold"

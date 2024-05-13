@@ -2,9 +2,11 @@ import { useEffect } from "react";
 import { useTranslation } from "../../context/TranslationContext";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { useTheme } from "../../context/ThemeContext";
 
 export const Description = () => {
   const { content, language } = useTranslation();
+  const { theme } = useTheme();
   const linkedInUrl = "https://www.linkedin.com/in/valentino-micheloni/";
   useEffect(() => {
     AOS.init({ duration: 1500 });
@@ -21,14 +23,22 @@ export const Description = () => {
       <div className="flex flex-col gap-3">
         <p>
           {content?.aboutMe[language].shortDesc.p1First}
-          <span className="font-semibold text-gray">
+          <span
+            className={`font-semibold ${
+              theme === "light" ? "text-gray" : "text-white"
+            }`}
+          >
             {content?.aboutMe[language].shortDesc.p1Highlight}
           </span>
           {content?.aboutMe[language].shortDesc.p1Last}
         </p>
         <p>
           {content?.aboutMe[language].shortDesc.p2First}
-          <span className="font-semibold text-gray">
+          <span
+            className={`font-semibold ${
+              theme === "light" ? "text-gray" : "text-white"
+            }`}
+          >
             {content?.aboutMe[language].shortDesc.p2Highlight}
           </span>
           {content?.aboutMe[language].shortDesc.p2Second}
@@ -44,11 +54,19 @@ export const Description = () => {
         </p>
         <p>
           {content?.aboutMe[language].shortDesc.p3First}
-          <span className="font-semibold text-gray">
+          <span
+            className={`font-semibold ${
+              theme === "light" ? "text-gray" : "text-white"
+            }`}
+          >
             {content?.aboutMe[language].shortDesc.p3Highlight}
           </span>
           {content?.aboutMe[language].shortDesc.p3Second}
-          <span className="font-semibold text-gray">
+          <span
+            className={`font-semibold ${
+              theme === "light" ? "text-gray" : "text-white"
+            }`}
+          >
             {content?.aboutMe[language].shortDesc.p3Hightlight2}
           </span>
         </p>
