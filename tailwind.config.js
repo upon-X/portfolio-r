@@ -43,6 +43,7 @@ export default {
         // Personalizados
         purple: "#9D6FFF",
         purpleDark: "#2F214B",
+        darkTheme: "#1d1d1d",
       },
       fontFamily: {
         juliusFF: ["Julius Sans One", "sans-serif"],

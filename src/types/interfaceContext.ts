@@ -5,6 +5,7 @@ export interface ChildrenPropsType {
 
 export type LanguageType = "es" | "en";
 
+export type ThemeType = "light" | "dark";
 export interface ViewTypes {
   landing: { es: any; en: any };
   navbar: { es: any; en: any };
@@ -20,4 +21,9 @@ export interface TranslationContextType {
   language: LanguageType;
   content?: ViewTypes;
   setLanguage: (language: LanguageType) => void;
+}
+
+export interface ThemeContextType {
+  theme: ThemeType;
+  setTheme: (theme: ThemeType) => void;
 }

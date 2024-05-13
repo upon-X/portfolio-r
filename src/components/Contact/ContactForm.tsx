@@ -80,7 +80,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full 2xl:col-span-2">
         <label>{content?.contact[language].form.message}</label>
         <textarea
-          className="text-lg min-h-[200px] max-h-[200px] bg-[#fafafa] outline-purple focus:outline-purple p-2 "
+          className="text-lg min-h-[200px] max-h-[200px] bg-[#fafafa] outline-purple focus:outline-purple p-2 resize-none"
           id="form_message"
           name="form_message"
           value={message}

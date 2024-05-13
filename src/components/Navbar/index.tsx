@@ -6,7 +6,7 @@ export const Navbar = () => {
   const { pathname } = useLocation();
 
   return (
-    <nav className="flex text-xl items-center justify-around max-w-screen h-[8vh] font-semibold text-gray uppercase select-none">
+    <nav className="flex text-xl items-center justify-around max-w-screen h-[8vh] font-semibold text-gray uppercase select-none mb-4">
       <Link
         to="/"
         className="border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all"

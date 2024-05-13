@@ -10,7 +10,11 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
   const { content, language } = useTranslation();
   return (
     <div className=" grid grid-cols-2 min-h-[400px] select-none">
-      <div className="flex flex-col items-start justify-center gap-3 p-10">
+      <div
+        className={`${
+          projectIndex % 2 !== 0 ? " col-start-2" : ""
+        } flex flex-col items-start justify-center gap-3 p-10`}
+      >
         <span className="flex gap-8 ">
           <p className="text-3xl font-semibold whitespace-nowrap">
             {content?.projects[language].everyProject[projectIndex].title}
@@ -48,7 +52,11 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           ))}
         </div>
       </div>
-      <div className="2xl:scale-90 flex items-center justify-end overflow-hidden">
+      <div
+        className={`${
+          projectIndex % 2 !== 0 ? " col-start-1 row-start-1" : ""
+        } 2xl:scale-90 flex items-center justify-end overflow-hidden`}
+      >
         <img
           className="-z-10"
           src={content?.projects[language].everyProject[projectIndex].image}

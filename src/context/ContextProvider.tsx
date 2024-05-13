@@ -13,6 +13,7 @@ import { ContentProjects } from "../translations/ProjectsTranslation/contentProj
 import { ContentContact } from "../translations/ContactTranslation/contentContact";
 import { ContentNotFound } from "../translations/NotFoundTranslation/contentNavbar";
 import { ContentSecretGame } from "../translations/SecretGame/contentSecretGame";
+import { ThemeProvider } from "./ThemeContext";
 
 export const ContextProvider = ({ children }: ChildrenPropsType) => {
   const [language, setLanguage] = useState<LanguageType>("es");
@@ -50,7 +51,7 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
     <TranslationContext.Provider
       value={{ language, setLanguage: handleLanguageChange, content }}
     >
-      {children}
+      <ThemeProvider>{children}</ThemeProvider>
     </TranslationContext.Provider>
   );
 };

@@ -1,5 +1,4 @@
 import { Route, Routes, useLocation } from "react-router-dom";
-import { BtnChangeLanguage } from "./components/btnChangeLanguage";
 import Projects from "./pages/Projects";
 import NotFound from "./pages/NotFound";
 import Landing from "./pages/Landing";
@@ -10,13 +9,14 @@ import { Footer } from "./components/Footer";
 import HolaMundo from "./pages/HolaMundo";
 import HelloWorld from "./pages/HelloWorld";
 import SecretGame from "./pages/SecretGame";
+import { BtnsContainer } from "./components/btnsContainer";
 
 function App() {
   const { pathname } = useLocation();
   return (
     <>
       {pathname !== "/helloworld" && pathname !== "/holamundo" ? (
-        <BtnChangeLanguage />
+        <BtnsContainer />
       ) : null}
       {pathname !== "/" &&
       pathname !== "/helloworld" &&
