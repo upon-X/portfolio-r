@@ -12,7 +12,7 @@ export default function Contact() {
   });
   return (
     <section
-      className={`flex flex-col gap-10 items-center py-10
+      className={`flex flex-col gap-10 items-center py-14
     ${theme === "light" ? "" : "bg-darkTheme text-white"}
     `}
     >

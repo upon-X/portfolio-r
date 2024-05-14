@@ -2,12 +2,12 @@ export const ContentProjects = {
   en: {
     title: "My Projects",
     subtitle:
-      "Here you will find some of the personal and clients projects that I developed with each project containing its own case study.",
+      "Here you will find some of the personal and client projects that I've developed.",
     everyProject: [
       {
         title: "Vehibuy",
         description:
-          "A luxury cars e-commerce. This major Full Stack project was carried out by a team of developers. It is the most ambitious and complex project I have undertaken.",
+          "A luxury cars e-commerce. This major Full Stack project was carried out by a team of eight developers. It is the most ambitious and complex project I have undertaken.",
         skillsUsed: [
           "HTML",
           "CSS",
@@ -24,8 +24,7 @@ export const ContentProjects = {
       },
       {
         title: "Greek World",
-        description:
-          "In this project, I narrate and describe the best stories and characters from Greek Mythology. I put a lot of care into it as I am a fan myself, which is why it is still in development.",
+        description: `In this project, I narrate and describe the best stories and characters from Greek Mythology. I put a lot of care into it as I am a fan myself, which is why it is still in development.`,
         skillsUsed: ["HTML", "CSS", "JavaScript", "React", "Redux"],
         image:
           "https://res.cloudinary.com/dzhiauyws/image/upload/v1715281644/Portfolio/new%20notebooks/ntbookGreekWorld_weit3i.png",
@@ -60,7 +59,7 @@ export const ContentProjects = {
       {
         title: "Vehibuy",
         description:
-          "E-commerce de autos lujosos. El primer proyecto Full Stack que desarrolle en un equipo de trabajo Es, hasta ahora, el proyecto mas grande y ambicioso en el que estuve.",
+          "E-commerce de autos lujosos. El primer proyecto Full Stack que desarrolle en un equipo de trabajo. Es, hasta ahora, el proyecto mas grande y ambicioso en el que estuve.",
         skillsUsed: [
           "HTML",
           "CSS",

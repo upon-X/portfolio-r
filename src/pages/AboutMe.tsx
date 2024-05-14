@@ -6,6 +6,7 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { useTheme } from "../context/ThemeContext";
+import { Experience } from "../components/AboutMe/Experience";
 
 export default function AboutMe() {
   const { content, language } = useTranslation();
@@ -36,8 +37,15 @@ export default function AboutMe() {
         <img src={myPhoto} alt="Valentino Micheloni Photo" />
       </div>
       <div className="grid grid-cols-2 gap-20">
-        <Description />
-        <MySkils />
+        <div>
+          <Description />
+        </div>
+        <div>
+          <Experience />
+        </div>
+        <div className=" col-span-2">
+          <MySkils />
+        </div>
       </div>
     </section>
   );
