@@ -25,7 +25,7 @@ export default function Presentation() {
         md:text-7xl md:whitespace-normal md:leading-[1.1]
         sm:text-6xl sm:whitespace-normal sm:leading-[1.1] 
         drop-shadow-[0_5px_5px_rgba(0,0,0,0.25)]
-        ${theme === "light" ? "text-black" : "text-white"}
+        ${theme === "light" ? "text-darkTheme" : "text-white"}
         `}
         >
           Valentino Micheloni

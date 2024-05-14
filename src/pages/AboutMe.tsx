@@ -36,7 +36,7 @@ export default function AboutMe() {
       >
         <img src={myPhoto} alt="Valentino Micheloni Photo" />
       </div>
-      <div className="grid grid-cols-2 gap-20">
+      <div className="grid grid-cols-2 gap-16">
         <div>
           <Description />
         </div>

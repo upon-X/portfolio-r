@@ -103,7 +103,7 @@ export const ContactForm = () => {
           type="submit"
           className="px-14 py-2 uppercase font-figtreeFF font-semibold transition-all 2xl:w-full outline-purple
           active:scale-95 
-          border-2 border-purple rounded-lg hover:bg-purple hover:text-white
+          border-2 border-purple rounded-full hover:bg-purple hover:text-white
         "
         >
           {isSubmitting

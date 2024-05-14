@@ -11,41 +11,36 @@ export const Experience = () => {
       className="flex flex-col gap-6 items-start text-xl leading-8"
     >
       <h5 className="font-semibold text-2xl">Experience</h5>
-      <ul className=" list-disc border-l-[1px] pl-[16px]">
+      <ul className=" list-disc text-purple ">
         <li>
-          <p className="font-semibold">
-            2024 / 03 - Currently | Front-end Dev | AWAQ ONGD
+          <p className="font-semibold ">
+            Front-end Developer | AWAQ ONGD | 03/2024 - Currently
           </p>
-          <ul className="pl-10">
-            <li className=" list-['*']">,iopafkiowf fnjawoifjo l m,</li>
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn
-              dsdakjndshjsdianmdsiohsdi
+          <ul className="pl-10 text-white">
+            <li className=" list-disc">
+              Desarrollar y rediseñar el sitio web de la organización
             </li>
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn ddasdssda
+            <li className=" list-disc">
+              Organizar y delegar tareas en un equipo de desarrolladores
             </li>
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn d
-            </li>
+            <li className=" list-disc">Implementar metodologia Scrum</li>
           </ul>
         </li>
         <li>
-          <p className="font-semibold">
-            2023 / 04 - Currently | Front-end Dev | Freelancer
+          <p className="font-semibold ">
+            Full Stack Developer | Freelancer | 02/2023 - Currently
           </p>
-          <ul className="pl-10">
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn d
+          <ul className="pl-10 text-white">
+            <li className=" list-disc">
+              Desarrollar sitios web para establecimientos comerciales
             </li>
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn d
+            <li className=" list-disc">
+              Desarrollar aplicaciones para gestión de stock
             </li>
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn d
-            </li>
-            <li className=" list-['*']">
-              deasidfujisn sakdjnjash dib asdb ajks bdjasn d
+            <li className=" list-disc">Crear diseños UX/UI</li>
+            <li className=" list-disc">
+              Realizar proyectos open-source para la comunidad de
+              desarrolladores
             </li>
           </ul>
         </li>
