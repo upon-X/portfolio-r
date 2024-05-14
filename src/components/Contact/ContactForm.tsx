@@ -47,7 +47,7 @@ export const ContactForm = () => {
     <form
       id="form"
       onSubmit={handleSubmit}
-      className={`flex flex-col items-end gap-4 bg-white h-[450px] text-xl rounded-lg shadow-lg p-8
+      className={`flex flex-col items-end gap-4 h-[450px] text-xl rounded-lg shadow-lg p-8
       2xl:w-[800px] 2xl:grid 2xl:grid-cols-2 2xl:grid-row-3
       ${theme === "light" ? "" : "bg-[#2c2c2c]"}
       `}

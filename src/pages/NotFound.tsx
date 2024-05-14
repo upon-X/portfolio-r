@@ -1,12 +1,18 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../context/TranslationContext";
 import { Secret } from "../components/Secret/btnToSecret";
+import { useTheme } from "../context/ThemeContext";
 
 export default function NotFound() {
   const { language, content } = useTranslation();
+  const { theme } = useTheme();
   const { pathname } = useLocation();
   return (
-    <section className="h-[84vh] select-none">
+    <section
+      className={`h-[84vh] select-none ${
+        theme === "light" ? "" : "bg-darkTheme text-white"
+      }`}
+    >
       <div className="flex justify-center items-center flex-col">
         <div>
           <span className="text-[10rem] hover:text-purple transition-all">
