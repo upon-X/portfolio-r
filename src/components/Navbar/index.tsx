@@ -29,6 +29,7 @@ export const Navbar = () => {
             pathname === "/about-me" ? "border-b-8" : null
           }
           ${theme === "light" ? "" : "text-white"}
+          hover:shadow-inner
           `}
         >
           {language === "es" ? "Sobre Mi" : "About Me"}
