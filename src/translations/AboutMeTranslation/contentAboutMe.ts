@@ -26,6 +26,34 @@ export const ContentAboutMe = {
     mySkills: {
       title: "My Skills",
     },
+    experience: {
+      title: "+2 years of experience",
+      jobs: [
+        {
+          title: "Desarollador Full Stack",
+          company: { name: "Freelance", url: "https://valemiche.com.ar" },
+          started: "02/2023",
+          finished: "Currently",
+          responsabilities: [
+            "Desarrollar sitios web para establecimientos comerciales",
+            "Desarrollar aplicaciones para gestión de stock",
+            "Crear diseños que mejoren la UX/UI",
+            "Realizar proyectos open-source para la comunidad de desarrolladores",
+          ],
+        },
+        {
+          title: "Desarrollador Front-end",
+          company: { name: "Awaq ONGD", url: "https://somosawaq.org" },
+          started: "03/2024",
+          finished: "Currently",
+          responsabilities: [
+            "Desarrollar y rediseñar el sitio web de la organización",
+            "Organizar y delegar tareas en un equipo de desarrolladores",
+            "Implementar metodologia Scrum",
+          ],
+        },
+      ],
+    },
   },
   es: {
     title: "Sobre Mi",
@@ -53,6 +81,34 @@ export const ContentAboutMe = {
     },
     mySkills: {
       title: "Mis Habilidades",
+    },
+    experience: {
+      title: "+2 años de experiencia",
+      jobs: [
+        {
+          title: "Desarollador Full Stack",
+          company: { name: "Freelance", url: "https://valemiche.com.ar" },
+          started: "02/2023",
+          finished: "Actualmente",
+          responsabilities: [
+            "Desarrollar sitios web para establecimientos comerciales",
+            "Desarrollar aplicaciones para gestión de stock",
+            "Crear diseños que mejoren la UX/UI",
+            "Realizar proyectos open-source para la comunidad de desarrolladores",
+          ],
+        },
+        {
+          title: "Desarrollador Front-end",
+          company: { name: "Awaq ONGD", url: "https://somosawaq.org" },
+          started: "03/2024",
+          finished: "Actualmente",
+          responsabilities: [
+            "Desarrollar y rediseñar el sitio web de la organización",
+            "Organizar y delegar tareas en un equipo de desarrolladores",
+            "Implementar metodologia Scrum",
+          ],
+        },
+      ],
     },
   },
 };
