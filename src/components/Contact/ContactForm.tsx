@@ -55,7 +55,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full">
         <label>{content?.contact[language].form.name}</label>
         <input
-          className={`text-lg rounded-sm ${
+          className={`text-lg rounded-md ${
             theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
           } focus:outline-purple outline-purple`}
           type="text"
@@ -70,7 +70,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full">
         <label>{content?.contact[language].form.email}</label>
         <input
-          className={`text-lg rounded-sm ${
+          className={`text-lg rounded-md ${
             theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
           } focus:outline-purple outline-purple`}
           type="email"
@@ -86,7 +86,7 @@ export const ContactForm = () => {
       <div className="flex flex-col gap-1 w-full 2xl:col-span-2">
         <label>{content?.contact[language].form.message}</label>
         <textarea
-          className={`text-lg rounded-sm min-h-[200px] max-h-[200px]  outline-purple focus:outline-purple p-2 resize-none
+          className={`text-lg rounded-md min-h-[200px] max-h-[200px] outline-purple focus:outline-purple p-2 resize-none
           ${theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"}
           `}
           id="form_message"

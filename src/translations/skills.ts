@@ -1,9 +1,10 @@
 export const myTechAndSoftSkills = [
+  "JavaScript",
+  "TypeScript",
+  "Python",
   "HTML",
   "CSS",
   "TailwindCSS",
-  "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
   "Redux",
