@@ -46,7 +46,7 @@ export const Description = () => {
           <a
             target="_blank"
             href={linkedInUrl}
-            className="font-semibold text-purple border-b-[1px]"
+            className="font-semibold text-purple underline"
           >
             {content?.aboutMe[language].shortDesc.p2Highlight2}
           </a>
