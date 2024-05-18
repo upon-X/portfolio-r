@@ -26,4 +26,3 @@ npm run dev
 
 - All pages are in pages folder and routed using "react-router-dom" in ./src/App.tsx
   - There are pages where components are not showed cause of original UX/UI
-  -
