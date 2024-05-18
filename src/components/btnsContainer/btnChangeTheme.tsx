@@ -19,7 +19,7 @@ export const BtnChangeTheme: React.FC = () => {
       data-aos="fade-in"
       name="Change Color Theme"
       onClick={handleThemeToggle}
-      className={`text-2xl rounded-full p-3 group border-2 ${
+      className={`text-2xl rounded-full p-2 group border-2 ${
         theme === "light" ? "border-darkTheme" : "border-white"
       } hover:border-purple`}
     >

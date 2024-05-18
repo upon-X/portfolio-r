@@ -28,7 +28,7 @@ export default function AboutMe() {
         className=" overflow-hidden rounded-full border-4 border-purple "
       >
         <img
-          className="w-[230px] h-[230px]"
+          className="w-[230px] h-[230px] aspect-square"
           src={myPhoto}
           alt="Valentino Micheloni Photo"
         />

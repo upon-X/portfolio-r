@@ -21,12 +21,12 @@ export const BtnChangeLanguage: React.FC = () => {
       name="change language"
       data-aos="fade-in"
       onClick={handleLanguageChange}
-      className={`w-[54px] h-[54px] p-2 flex justify-center items-center border-2 ${
+      className={`w-[44px] h-[44px] p-1 flex justify-center items-center border-2 ${
         theme === "light" ? "border-darkTheme" : "border-white"
       } overflow-hidden rounded-full hover:border-purple`}
     >
       <img
-        className="rounded-full "
+        className="rounded-full w-[44px] h-[36px]"
         src={`https://flagsapi.com/${
           language === "es" ? "ES" : "GB"
         }/flat/64.png`}
