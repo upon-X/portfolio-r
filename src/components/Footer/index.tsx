@@ -16,13 +16,7 @@ export const Footer = () => {
           : "bg-darkTheme text-white"
       }text-lg md:text-base sm:text-base h-[8vh] p-6 sm:p-16`}
     >
-      <p
-        className={` ${
-          theme === "light"
-            ? "bg-transparent text-darkTheme"
-            : "bg-darkTheme text-white"
-        }`}
-      >
+      <p className={` ${theme === "light" ? "text-darkTheme" : "text-white"}`}>
         {content?.footer[language].rightsReserved}
       </p>
       <div

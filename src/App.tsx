@@ -8,15 +8,20 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import SecretGame from "./pages/SecretGame";
 import { BtnsContainer } from "./components/btnsContainer";
+import Lumi from "./pages/Lumiflex";
 
 function App() {
   const { pathname } = useLocation();
   return (
     <>
-      <BtnsContainer />
-
-      {pathname !== "/" && pathname !== "/secret-game" ? <Navbar /> : null}
+      {pathname !== "/lumi" ? <BtnsContainer /> : null}
+      {pathname !== "/" &&
+      pathname !== "/secret-game" &&
+      pathname !== "/lumi" ? (
+        <Navbar />
+      ) : null}
       <Routes>
+        <Route path={"/lumi"} element={<Lumi />} />
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Landing />} />
         <Route path={"/about-me"} element={<AboutMe />} />
@@ -24,7 +29,11 @@ function App() {
         <Route path={"/contact"} element={<Contact />} />
         <Route path={"/secret-game"} element={<SecretGame />} />
       </Routes>
-      {pathname !== "/" && pathname !== "/secret-game" ? <Footer /> : null}
+      {pathname !== "/" &&
+      pathname !== "/secret-game" &&
+      pathname !== "/lumi" ? (
+        <Footer />
+      ) : null}
     </>
   );
 }
