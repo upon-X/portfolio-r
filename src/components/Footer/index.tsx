@@ -24,10 +24,18 @@ export const Footer = () => {
           theme === "light" ? "text-darkTheme" : "text-white"
         }`}
       >
-        <a target="_blank" href={githubUrl}>
+        <a
+          aria-label="Visit my github account"
+          target="_blank"
+          href={githubUrl}
+        >
           <FaGithub />
         </a>
-        <a target="_blank" href={linkedinUrl}>
+        <a
+          aria-label="Visit my linkedIn account"
+          target="_blank"
+          href={linkedinUrl}
+        >
           <FaLinkedin />
         </a>
       </div>
