@@ -1,12 +1,13 @@
 import React, { useContext, useEffect } from "react";
 import { TranslationContext } from "../../context/TranslationContext"; // Verifica que el nombre del archivo sea correcto.
 import { LanguageType } from "../../types/interfaceContext";
-import FlagES from "/flagES.webp";
-import FlagGB from "/flagGB.webp";
 import "aos/dist/aos.css";
 import AOS from "aos";
+import { useTheme } from "../../context/ThemeContext";
+
 export const BtnChangeLanguage: React.FC = () => {
   const { language, setLanguage } = useContext(TranslationContext);
+  const { theme } = useTheme();
 
   const handleLanguageChange = () => {
     const newLanguage: LanguageType = language === "es" ? "en" : "es";
@@ -16,26 +17,21 @@ export const BtnChangeLanguage: React.FC = () => {
     AOS.init({ duration: 1000 });
   }, []);
   return (
-    <div className="flex scale-150 select-none">
-      <button
-        data-aos="fade-in"
-        onClick={handleLanguageChange}
-        className="flex justify-center items-center w-[20px] h-[20px] overflow-hidden rounded-full"
-      >
-        {language === "es" ? (
-          <img
-            className="opacity-70 hover:opacity-100 min-w-[34px]"
-            src={FlagES}
-            alt="Español"
-          />
-        ) : (
-          <img
-            className="opacity-70 hover:opacity-100 min-w-[34px]"
-            src={FlagGB}
-            alt="English"
-          />
-        )}
-      </button>
-    </div>
+    <button
+      name="change language"
+      data-aos="fade-in"
+      onClick={handleLanguageChange}
+      className={`w-[54px] h-[54px] p-2 flex justify-center items-center border-2 ${
+        theme === "light" ? "border-darkTheme" : "border-white"
+      } overflow-hidden rounded-full hover:border-purple`}
+    >
+      <img
+        className="rounded-full "
+        src={`https://flagsapi.com/${
+          language === "es" ? "ES" : "GB"
+        }/flat/64.png`}
+        alt={language}
+      />
+    </button>
   );
 };
