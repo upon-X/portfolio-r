@@ -68,11 +68,7 @@ export const ContentAboutMe = {
       p2First:
         "También me gusta compartir contenido relacionado con las cosas que he aprendido a lo largo de los años en el",
       p2Highlight: " Desarrollo Web ",
-      p2Second:
-        "para poder ayudar a otros de la comunidad de desarrolladores. No dudes en conectar o seguirme en ",
-      p2Highlight2: "LinkedIn",
-      p2Last:
-        " donde comparto contenido útil relacionado con el desarrollo web y la programación.",
+      p2Last: "para poder ayudar a otros de la comunidad de desarrolladores.",
       p3First: "Estoy abierto a ",
       p3Highlight: " oportunidades de trabajo ",
       p3Second:

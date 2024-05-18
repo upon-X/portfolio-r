@@ -7,7 +7,6 @@ import { useTheme } from "../../context/ThemeContext";
 export const Description = () => {
   const { content, language } = useTranslation();
   const { theme } = useTheme();
-  const linkedInUrl = "https://www.linkedin.com/in/valentino-micheloni/";
   useEffect(() => {
     AOS.init({ duration: 1500 });
   });
@@ -41,15 +40,6 @@ export const Description = () => {
           >
             {content?.aboutMe[language].shortDesc.p2Highlight}
           </span>
-          {content?.aboutMe[language].shortDesc.p2Second}
-          {/* LinkedIn link */}
-          <a
-            target="_blank"
-            href={linkedInUrl}
-            className="font-semibold text-purple underline"
-          >
-            {content?.aboutMe[language].shortDesc.p2Highlight2}
-          </a>
           {content?.aboutMe[language].shortDesc.p2Last}
         </p>
         <p>
