@@ -22,6 +22,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
             {content?.projects[language].everyProject[projectIndex].title}
           </p>
           <a
+            aria-label="Visit the real-time deploy of this project"
             className="text-purple border-[1px] rounded-full text-xl flex justify-center items-center gap-2 font-normal transition-all px-4 hover:bg-purple hover:text-white hover:border-transparent"
             target="_blank"
             href={content?.projects[language].everyProject[projectIndex].deploy}
@@ -62,7 +63,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
         } 2xl:scale-90 flex items-center justify-end overflow-hidden`}
       >
         <img
-          className="-z-10"
+          className="-z-10 w-full max-h-3/4 aspect-video"
           src={content?.projects[language].everyProject[projectIndex].image}
           alt={`image of the project n${projectIndex}`}
         />
