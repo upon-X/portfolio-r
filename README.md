@@ -10,19 +10,14 @@ This is a SEO friendly portfolio
 
 ![My Skills](https://skillicons.dev/icons?i=html,css,typescript,tailwindcss,react,vite)
 
-Install dependencies
+Install [dependencies](#1)
 
 ```md
 npm install
 ```
 
-So we are using Vite...
+We are using Vite,, so...
 
 ```md
 npm run dev
 ```
-
-### Structure:
-
-- All pages are in pages folder and routed using "react-router-dom" in ./src/App.tsx
-  - There are pages where components are not showed cause of original UX/UI
