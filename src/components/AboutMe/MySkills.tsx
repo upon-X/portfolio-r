@@ -8,9 +8,9 @@ export const MySkils = () => {
 
   return (
     <div data-aos="fade-left" className="flex flex-col gap-6">
-      <h5 className="font-semibold text-2xl">
+      <h4 className="font-semibold text-2xl">
         {content?.aboutMe[language].mySkills.title}
-      </h5>
+      </h4>
       <div className="flex flex-wrap gap-3 text-xl select-none">
         {myTechAndSoftSkills.map((skill, index) => (
           <div

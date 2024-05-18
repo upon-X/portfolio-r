@@ -11,6 +11,7 @@ export default function Projects() {
 
   return (
     <section
+      id="projects"
       className={`flex flex-col gap-10 items-center py-14
     ${theme === "light" ? "" : "bg-darkTheme text-white"}
     `}
@@ -22,9 +23,6 @@ export default function Projects() {
         {content?.projects[language].title}
         <span className="w-[100px] border-b-[6px] rounded-full border-purple text-transparent"></span>
       </h3>
-      {/* <h4 data-aos="fade-down" className="text-center text-2xl">
-        {content?.projects[language].subtitle}
-      </h4> */}
       <div className="flex flex-col gap-10">
         {content?.projects[language].everyProject.map(
           (_project: undefined, index: number) => {

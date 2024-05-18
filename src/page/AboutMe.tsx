@@ -11,6 +11,7 @@ export default function AboutMe() {
 
   return (
     <section
+      id="about-me"
       className={`flex flex-col gap-10 items-center py-14
     ${theme === "light" ? "" : "bg-darkTheme text-white"}
     `}
@@ -36,11 +37,11 @@ export default function AboutMe() {
         />
       </div>
       <div className="grid grid-cols-2 gap-16">
-        <div>
-          <Description />
-        </div>
-        <div>
+        <div data-aos="fade-right">
           <Experience />
+        </div>
+        <div data-aos="fade-left">
+          <Description />
         </div>
         <div className=" col-span-2">
           <MySkils />

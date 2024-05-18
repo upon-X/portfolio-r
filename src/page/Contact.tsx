@@ -8,7 +8,8 @@ export default function Contact() {
   const { theme } = useTheme();
   return (
     <section
-      className={`flex flex-col gap-10 items-center py-14
+      id="contact"
+      className={`flex flex-col gap-10 items-center py-14 h-[80vh]
     ${theme === "light" ? "" : "bg-darkTheme text-white"}
     `}
     >

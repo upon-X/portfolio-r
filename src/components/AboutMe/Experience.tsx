@@ -20,13 +20,10 @@ export const Experience = () => {
   const { theme } = useTheme();
 
   return (
-    <div
-      data-aos="fade-left"
-      className="flex flex-col gap-6 items-start text-xl leading-8"
-    >
-      <h5 className="font-semibold text-2xl">
+    <div className="flex flex-col gap-6 items-start text-xl leading-8">
+      <h4 className="font-semibold text-2xl">
         {content?.aboutMe[language].experience.title}
-      </h5>
+      </h4>
       <ul className=" list-disc text-purple ">
         {content?.aboutMe[language].experience.jobs
           .slice()

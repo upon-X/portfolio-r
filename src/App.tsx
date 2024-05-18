@@ -12,27 +12,19 @@ import AOS from "aos";
 function App() {
   const { pathname } = useLocation();
   useEffect(() => {
-    AOS.init({ duration: 500 });
-  });
+    AOS.init({ duration: 800 });
+  }, []);
   return (
     <>
       {pathname !== "/lumi" ? <BtnsContainer /> : null}
-      {pathname !== "/" &&
-      pathname !== "/secret-game" &&
-      pathname !== "/lumi" ? (
-        <Navbar />
-      ) : null}
+      {pathname !== "/secret-game" && pathname !== "/lumi" ? <Navbar /> : null}
       <Routes>
         <Route path={"/lumi"} element={<Lumi />} />
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Home />} />
         <Route path={"/secret-game"} element={<SecretGame />} />
       </Routes>
-      {pathname !== "/" &&
-      pathname !== "/secret-game" &&
-      pathname !== "/lumi" ? (
-        <Footer />
-      ) : null}
+      {pathname !== "/secret-game" && pathname !== "/lumi" ? <Footer /> : null}
     </>
   );
 }
