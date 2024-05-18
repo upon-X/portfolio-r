@@ -5,7 +5,6 @@ import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import SecretGame from "./page/SecretGame";
 import { BtnsContainer } from "./components/btnsContainer";
-import Lumi from "./page/Lumiflex";
 import Home from "./page";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -16,15 +15,14 @@ function App() {
   }, []);
   return (
     <>
-      {pathname !== "/lumi" ? <BtnsContainer /> : null}
-      {pathname !== "/secret-game" && pathname !== "/lumi" ? <Navbar /> : null}
+      <BtnsContainer />
+      {pathname !== "/secret-game" ? <Navbar /> : null}
       <Routes>
-        <Route path={"/lumi"} element={<Lumi />} />
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Home />} />
         <Route path={"/secret-game"} element={<SecretGame />} />
       </Routes>
-      {pathname !== "/secret-game" && pathname !== "/lumi" ? <Footer /> : null}
+      {pathname !== "/secret-game" ? <Footer /> : null}
     </>
   );
 }
