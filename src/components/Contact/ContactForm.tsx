@@ -52,8 +52,8 @@ export const ContactForm = () => {
       ${theme === "light" ? "" : "bg-[#2c2c2c]"}
       `}
     >
-      <div className="flex flex-col gap-1 w-full">
-        <label>{content?.contact[language].form.name}</label>
+      <label className="flex flex-col gap-1 w-full">
+        {content?.contact[language].form.name}
         <input
           className={`text-lg rounded-md ${
             theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
@@ -66,9 +66,9 @@ export const ContactForm = () => {
           maxLength={100}
           required
         />
-      </div>
-      <div className="flex flex-col gap-1 w-full">
-        <label>{content?.contact[language].form.email}</label>
+      </label>
+      <label className="flex flex-col gap-1 w-full">
+        {content?.contact[language].form.email}
         <input
           className={`text-lg rounded-md ${
             theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
@@ -82,9 +82,9 @@ export const ContactForm = () => {
           required
           pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
         />
-      </div>
-      <div className="flex flex-col gap-1 w-full 2xl:col-span-2">
-        <label>{content?.contact[language].form.message}</label>
+      </label>
+      <label className="flex flex-col gap-1 w-full 2xl:col-span-2">
+        {content?.contact[language].form.message}
         <textarea
           className={`text-lg rounded-md min-h-[200px] max-h-[200px] outline-purple focus:outline-purple p-2 resize-none
           ${theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"}
@@ -97,7 +97,7 @@ export const ContactForm = () => {
           maxLength={1200}
           required
         />
-      </div>
+      </label>
       <div className=" flex justify-center col-start-2 ">
         <button
           type="submit"
