@@ -64,6 +64,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
         <img
           className="-z-10"
           src={content?.projects[language].everyProject[projectIndex].image}
+          alt={`image of the project n${projectIndex}`}
         />
       </div>
     </div>

@@ -3,9 +3,11 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
 import { myTechAndSoftSkills } from "../../translations/skills";
+import { useTheme } from "../../context/ThemeContext";
 
 export const MySkils = () => {
   const { content, language } = useTranslation();
+  const { theme } = useTheme();
   useEffect(() => {
     AOS.init({ duration: 1000 });
   });
@@ -21,7 +23,9 @@ export const MySkils = () => {
         {myTechAndSoftSkills.map((skill, index) => (
           <div
             key={index}
-            className={`border-2 border-purple rounded-md px-[0.6rem] py-[0.3rem] font-semibold text-purple hover:bg-purple hover:text-white hover:-translate-y-1 transition-all`}
+            className={`border-2 border-purple rounded-md px-[0.6rem] py-[0.3rem] font-semibold ${
+              theme === "light" ? "text-darkTheme" : "text-[#ebebeb]"
+            } hover:bg-purple hover:text-white hover:-translate-y-1 transition-all`}
           >
             {skill}
           </div>
