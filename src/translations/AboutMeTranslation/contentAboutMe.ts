@@ -27,7 +27,7 @@ export const ContentAboutMe = {
       title: "My Skills",
     },
     experience: {
-      title: "+2 years of experience",
+      title: "+1 year of experience",
       jobs: [
         {
           title: "Desarollador Full Stack",
@@ -79,7 +79,7 @@ export const ContentAboutMe = {
       title: "Mis Habilidades",
     },
     experience: {
-      title: "+2 años de experiencia",
+      title: "+1 año de experiencia",
       jobs: [
         {
           title: "Desarollador Full Stack",

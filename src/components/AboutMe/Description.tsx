@@ -1,15 +1,9 @@
-import { useEffect } from "react";
 import { useTranslation } from "../../context/TranslationContext";
-import "aos/dist/aos.css";
-import AOS from "aos";
 import { useTheme } from "../../context/ThemeContext";
 
 export const Description = () => {
   const { content, language } = useTranslation();
   const { theme } = useTheme();
-  useEffect(() => {
-    AOS.init({ duration: 1500 });
-  });
 
   return (
     <div

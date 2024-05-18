@@ -1,17 +1,19 @@
+import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Projects from "./pages/Projects";
-import NotFound from "./pages/NotFound";
-import Landing from "./pages/Landing";
-import Contact from "./pages/Contact";
-import AboutMe from "./pages/AboutMe";
+import NotFound from "./page/NotFound";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
-import SecretGame from "./pages/SecretGame";
+import SecretGame from "./page/SecretGame";
 import { BtnsContainer } from "./components/btnsContainer";
-import Lumi from "./pages/Lumiflex";
-
+import Lumi from "./page/Lumiflex";
+import Home from "./page";
+import "aos/dist/aos.css";
+import AOS from "aos";
 function App() {
   const { pathname } = useLocation();
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  });
   return (
     <>
       {pathname !== "/lumi" ? <BtnsContainer /> : null}
@@ -23,10 +25,7 @@ function App() {
       <Routes>
         <Route path={"/lumi"} element={<Lumi />} />
         <Route path={"*"} element={<NotFound />} />
-        <Route path={"/"} element={<Landing />} />
-        <Route path={"/about-me"} element={<AboutMe />} />
-        <Route path={"/projects"} element={<Projects />} />
-        <Route path={"/contact"} element={<Contact />} />
+        <Route path={"/"} element={<Home />} />
         <Route path={"/secret-game"} element={<SecretGame />} />
       </Routes>
       {pathname !== "/" &&
