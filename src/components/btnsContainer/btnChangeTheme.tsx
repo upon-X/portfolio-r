@@ -15,9 +15,7 @@ export const BtnChangeTheme: React.FC = () => {
   return (
     <button
       id="Change Color Theme"
-      aria-roledescription="Change Color Theme"
       aria-label="Change Color Theme"
-      aria-placeholder="Change Color Theme"
       data-aos="fade-in"
       name="Change Color Theme"
       onClick={handleThemeToggle}
