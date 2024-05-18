@@ -1,15 +1,10 @@
 import { FaCode, FaRegAddressCard, FaRegMessage } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { useTranslation } from "../../context/TranslationContext";
-import "aos/dist/aos.css";
-import AOS from "aos";
-import { useEffect } from "react";
 
 export const BtnsLinks = () => {
   const { language } = useTranslation();
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  });
+
   return (
     <div
       data-aos="fade-up"

@@ -1,16 +1,9 @@
-import { useEffect } from "react";
 import { useTranslation } from "../../context/TranslationContext";
-import "aos/dist/aos.css";
-import AOS from "aos";
 import { useTheme } from "../../context/ThemeContext";
 
 export default function Presentation() {
   const { language, content } = useTranslation();
   const { theme } = useTheme();
-
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  });
 
   return (
     <div className="flex flex-col items-center select-none">
