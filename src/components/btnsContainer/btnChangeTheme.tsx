@@ -1,13 +1,9 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { FaMoon, FaSun } from "react-icons/fa6";
-import "aos/dist/aos.css";
-import AOS from "aos";
+
 export const BtnChangeTheme: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  }, []);
   const handleThemeToggle = () => {
     toggleTheme();
   };
