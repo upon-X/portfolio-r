@@ -5,8 +5,7 @@ export const ContentAboutMe = {
       "Here you will find more information about me, what I do, and my current skills at programming",
     shortDesc: {
       title: "Who I am?",
-      p1First: "I´m",
-      p1Highlight: " Frontend Web Developer ",
+      p1Highlight: "Frontend Web Developer ",
       p1Last:
         "building the Front-end of Websites and Web Applications that leads to the success of the overall product.",
       p2First:
@@ -27,7 +26,7 @@ export const ContentAboutMe = {
       title: "My Skills",
     },
     experience: {
-      title: "+2 years of experience",
+      title: "+1 year of experience",
       jobs: [
         {
           title: "Desarollador Full Stack",
@@ -61,8 +60,7 @@ export const ContentAboutMe = {
       "Aquí encontrarás información sobre mí, lo que hago y mis habilidades tecnicas en la programación",
     shortDesc: {
       title: "¿Quien soy?",
-      p1First: "Soy",
-      p1Highlight: " Desarrollador Web especializado en tecnologias Frontend, ",
+      p1Highlight: "Desarrollador Web especializado en tecnologias Frontend, ",
       p1Last:
         "construyendo sitios web para contribuir a la inserción de mis clientes en el entorno virtual.",
       p2First:
@@ -79,7 +77,7 @@ export const ContentAboutMe = {
       title: "Mis Habilidades",
     },
     experience: {
-      title: "+2 años de experiencia",
+      title: "+1 año de experiencia",
       jobs: [
         {
           title: "Desarollador Full Stack",

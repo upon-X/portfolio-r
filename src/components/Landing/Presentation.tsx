@@ -1,23 +1,13 @@
-import { useEffect } from "react";
 import { useTranslation } from "../../context/TranslationContext";
-import "aos/dist/aos.css";
-import AOS from "aos";
 import { useTheme } from "../../context/ThemeContext";
 
 export default function Presentation() {
   const { language, content } = useTranslation();
   const { theme } = useTheme();
 
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  });
-
   return (
     <div className="flex flex-col items-center select-none">
-      <div
-        data-aos="fade-down"
-        className="flex flex-col items-center text-center"
-      >
+      <div className="flex flex-col items-center text-center">
         <h1
           className={`uppercase text-6xl font-medium font-juliusFF 2xl:-mb-5 whitespace-nowrap 
         2xl:text-7xl xl:-mb-4

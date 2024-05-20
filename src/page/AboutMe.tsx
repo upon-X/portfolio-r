@@ -2,31 +2,28 @@ import { useTranslation } from "../context/TranslationContext";
 import { Description } from "../components/AboutMe/Description";
 import { MySkils } from "../components/AboutMe/MySkills";
 import myPhoto from "../assets/myphotonobg.webp";
-import { useEffect } from "react";
-import "aos/dist/aos.css";
-import AOS from "aos";
 import { useTheme } from "../context/ThemeContext";
 import { Experience } from "../components/AboutMe/Experience";
 
 export default function AboutMe() {
   const { content, language } = useTranslation();
   const { theme } = useTheme();
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  });
+
   return (
     <section
+      id="about-me"
       className={`flex flex-col gap-10 items-center py-14
-    ${theme === "light" ? "" : "bg-darkTheme text-white"}
-    `}
+      ${theme === "light" ? "" : "bg-darkTheme text-white"}
+      `}
     >
-      <h4 data-aos="fade-down" className="text-center text-2xl">
+      <h3 className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold">
+        {content?.aboutMe[language].title}
+        <span className="w-[100px] border-b-[6px] rounded-full border-purple text-transparent"></span>
+      </h3>
+      {/* <h4 className="text-center text-2xl">
         {content?.aboutMe[language].subtitle}
-      </h4>
-      <div
-        data-aos="fade-in"
-        className=" overflow-hidden rounded-full border-4 border-purple "
-      >
+      </h4> */}
+      <div className=" overflow-hidden rounded-full border-4 border-purple ">
         <img
           className="w-[230px] h-[230px] aspect-square"
           src={myPhoto}
@@ -35,10 +32,10 @@ export default function AboutMe() {
       </div>
       <div className="grid grid-cols-2 gap-16">
         <div>
-          <Description />
+          <Experience />
         </div>
         <div>
-          <Experience />
+          <Description />
         </div>
         <div className=" col-span-2">
           <MySkils />

@@ -1,7 +1,4 @@
 /* eslint-disable no-unsafe-optional-chaining */
-import "aos/dist/aos.css";
-import AOS from "aos";
-import { useEffect } from "react";
 import { useTranslation } from "../../context/TranslationContext";
 import { useTheme } from "../../context/ThemeContext";
 
@@ -21,17 +18,12 @@ interface Job {
 export const Experience = () => {
   const { content, language } = useTranslation();
   const { theme } = useTheme();
-  useEffect(() => {
-    AOS.init({ duration: 1000 });
-  });
+
   return (
-    <div
-      data-aos="fade-left"
-      className="flex flex-col gap-6 items-start text-xl leading-8"
-    >
-      <h5 className="font-semibold text-2xl">
+    <div className="flex flex-col gap-6 items-start text-xl leading-8">
+      <h4 className="font-semibold text-2xl">
         {content?.aboutMe[language].experience.title}
-      </h5>
+      </h4>
       <ul className=" list-disc text-purple ">
         {content?.aboutMe[language].experience.jobs
           .slice()
