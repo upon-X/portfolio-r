@@ -30,14 +30,19 @@ export default function AboutMe() {
           alt="Valentino Micheloni Photo"
         />
       </div>
-      <div className="grid grid-cols-2 gap-16">
-        <div>
-          <Description />
-        </div>
-        <div>
+      <div
+        className="flex flex-col gap-16
+        2xl:grid 2xl:grid-cols-2
+        xl:grid xl:grid-cols-2
+        "
+      >
+        <div className="order-1">
           <Experience />
         </div>
-        <div className=" col-span-2">
+        <div className="order-2">
+          <Description />
+        </div>
+        <div className="order-3 col-span-2">
           <MySkils />
         </div>
       </div>

@@ -21,7 +21,6 @@
 
   body {
     margin: 0;
-    background-color: #ffffff;
   }
 
   section {
@@ -42,38 +41,11 @@
     color: white;
     background-color: #9d6fff;
     border-radius: 200px;
-    /* background: rgba(255, 255, 255, 0);
-    background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(157, 111, 255, 1) 100%
-    );
-    background: -webkit-gradient(
-      left top,
-      left bottom,
-      color-stop(0%, rgba(255, 255, 255, 0)),
-      color-stop(100%, rgba(157, 111, 255, 1))
-    );
-    background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(157, 111, 255, 1) 100%
-    );
-    background: -o-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(157, 111, 255, 1) 100%
-    );
-    background: -ms-linear-gradient(
-      top,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(157, 111, 255, 1) 100%
-    );
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 0%,
-      rgba(157, 111, 255, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9d6fff', GradientType=0 ); */
+  }
+
+  @media (max-width: 768px) {
+    section {
+      padding: 0 5vw;
+    }
   }
 }

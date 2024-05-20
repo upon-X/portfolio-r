@@ -16,7 +16,6 @@ export const Navbar = () => {
       }
     };
     window.addEventListener("resize", handleResize);
-    // Check the width initially
     handleResize();
     return () => {
       window.removeEventListener("resize", handleResize);

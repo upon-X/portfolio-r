@@ -11,7 +11,7 @@ export const MySkils = () => {
       <h4 className="font-semibold text-2xl">
         {content?.aboutMe[language].mySkills.title}
       </h4>
-      <div className="flex flex-wrap gap-3 text-xl select-none">
+      <div className="flex flex-wrap gap-3 text-xl sm:text-lg sm:gap-2 md:text-lg md:gap-2 select-none">
         {myTechAndSoftSkills.map((skill, index) => (
           <div
             key={index}

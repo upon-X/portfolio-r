@@ -29,7 +29,7 @@ export const Experience = () => {
           .slice()
           .reverse()
           .map((job: Job, index: number) => (
-            <li key={index} className="list-none">
+            <li key={index} className="list-none text-lg leading-7">
               <p className="font-bold">
                 {job.title} |{" "}
                 <a
@@ -50,7 +50,7 @@ export const Experience = () => {
                 {job.responsabilities.map((responsibility, index) => (
                   <li
                     key={index}
-                    className="text-lg list-['+'] my-3 leading-6 font-medium"
+                    className="text-base list-['+'] my-3 leading-6 font-medium"
                   >
                     <span className=" ml-2">{responsibility}</span>
                   </li>

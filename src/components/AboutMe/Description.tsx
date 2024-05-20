@@ -6,7 +6,7 @@ export const Description = () => {
   const { theme } = useTheme();
 
   return (
-    <div className="flex flex-col gap-6 items-start text-xl leading-8">
+    <div className="flex flex-col gap-6 items-start text-lg leading-7">
       <h4 className="font-semibold text-2xl">
         {content?.aboutMe[language].shortDesc.title}
       </h4>
