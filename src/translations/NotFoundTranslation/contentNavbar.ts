@@ -1,10 +1,10 @@
 export const ContentNotFound = {
   en: {
     title: "Page not found",
-    tryUrls: "Try these instead",
+    tryUrls: "Go back to Home",
   },
   es: {
     title: "Página no encontrada",
-    tryUrls: "Prueba estas en su lugar",
+    tryUrls: "Vuelve al Inicio",
   },
 };

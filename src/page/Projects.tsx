@@ -12,7 +12,7 @@ export default function Projects() {
     ${theme === "light" ? "" : "bg-darkTheme text-white"}
     `}
     >
-      <h3 className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold">
+      <h3 className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold text-center">
         {content?.projects[language].title}
         <span className="w-[100px] border-b-[6px] rounded-full border-purple text-transparent"></span>
       </h3>

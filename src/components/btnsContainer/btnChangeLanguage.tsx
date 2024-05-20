@@ -18,7 +18,8 @@ export const BtnChangeLanguage: React.FC = () => {
       onClick={handleLanguageChange}
       className={`w-[44px] h-[44px] p-1 flex justify-center items-center border-2 ${
         theme === "light" ? "border-darkTheme" : "border-white"
-      } overflow-hidden rounded-full hover:border-purple`}
+      } overflow-hidden rounded-full hover:border-purple
+      md:hover:border-darkTheme md:border-white sm:hover:border-darkTheme sm:border-white`}
     >
       <img
         className="rounded-full w-[44px] h-[36px] aspect-square"
