@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 import NotFound from "./page/NotFound";
 import { Navbar } from "./components/Navbar";
@@ -6,13 +5,9 @@ import { Footer } from "./components/Footer";
 import SecretGame from "./page/SecretGame";
 import { BtnsContainer } from "./components/btnsContainer";
 import Home from "./page";
-import "aos/dist/aos.css";
-import AOS from "aos";
-function App() {
+
+export default function App() {
   const { pathname } = useLocation();
-  useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
   return (
     <>
       <BtnsContainer />
@@ -26,5 +21,3 @@ function App() {
     </>
   );
 }
-
-export default App;

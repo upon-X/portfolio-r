@@ -14,7 +14,7 @@ export const BtnChangeLanguage: React.FC = () => {
   return (
     <button
       name="change language"
-      data-aos="fade-in"
+      aria-label="Change Language"
       onClick={handleLanguageChange}
       className={`w-[44px] h-[44px] p-1 flex justify-center items-center border-2 ${
         theme === "light" ? "border-darkTheme" : "border-white"

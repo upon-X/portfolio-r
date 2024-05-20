@@ -12,7 +12,6 @@
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
     "@tabler/icons-react": "^3.3.0",
-    "aos": "^2.3.4",
     "autoprefixer": "^10.4.19",
     "axios": "^1.6.8",
     "postcss": "^8.4.38",
@@ -23,7 +22,6 @@
     "sweetalert2": "^11.10.8"
   },
   "devDependencies": {
-    "@types/aos": "^3.0.7",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",

@@ -12,7 +12,6 @@ export const BtnChangeTheme: React.FC = () => {
     <button
       id="Change Color Theme"
       aria-label="Change Color Theme"
-      data-aos="fade-in"
       name="Change Color Theme"
       onClick={handleThemeToggle}
       className={`text-2xl rounded-full p-2 group border-2 ${

@@ -7,7 +7,7 @@ export const MySkils = () => {
   const { theme } = useTheme();
 
   return (
-    <div data-aos="fade-left" className="flex flex-col gap-6">
+    <div className="flex flex-col gap-6">
       <h4 className="font-semibold text-2xl">
         {content?.aboutMe[language].mySkills.title}
       </h4>

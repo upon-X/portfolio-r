@@ -13,23 +13,17 @@ export default function AboutMe() {
     <section
       id="about-me"
       className={`flex flex-col gap-10 items-center py-14
-    ${theme === "light" ? "" : "bg-darkTheme text-white"}
-    `}
+      ${theme === "light" ? "" : "bg-darkTheme text-white"}
+      `}
     >
-      <h3
-        data-aos="fade-down"
-        className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold"
-      >
+      <h3 className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold">
         {content?.aboutMe[language].title}
         <span className="w-[100px] border-b-[6px] rounded-full border-purple text-transparent"></span>
       </h3>
-      {/* <h4 data-aos="fade-down" className="text-center text-2xl">
+      {/* <h4 className="text-center text-2xl">
         {content?.aboutMe[language].subtitle}
       </h4> */}
-      <div
-        data-aos="fade-in"
-        className=" overflow-hidden rounded-full border-4 border-purple "
-      >
+      <div className=" overflow-hidden rounded-full border-4 border-purple ">
         <img
           className="w-[230px] h-[230px] aspect-square"
           src={myPhoto}
@@ -37,10 +31,10 @@ export default function AboutMe() {
         />
       </div>
       <div className="grid grid-cols-2 gap-16">
-        <div data-aos="fade-right">
+        <div>
           <Experience />
         </div>
-        <div data-aos="fade-left">
+        <div>
           <Description />
         </div>
         <div className=" col-span-2">
