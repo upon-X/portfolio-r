@@ -32,10 +32,10 @@ export default function AboutMe() {
       </div>
       <div className="grid grid-cols-2 gap-16">
         <div>
-          <Experience />
+          <Description />
         </div>
         <div>
-          <Description />
+          <Experience />
         </div>
         <div className=" col-span-2">
           <MySkils />

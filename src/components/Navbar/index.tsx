@@ -34,7 +34,7 @@ export const Navbar = () => {
         <a
           href="#about-me"
           className={`border-b-2 border-purple px-3 py-1   transition-all ${
-            pathname === "/about-me" ? "border-b-8" : null
+            pathname === "#about-me" ? "border-b-8" : null
           }
           ${theme === "light" ? "" : "text-white"}
           hover:shadow-inner
@@ -46,7 +46,7 @@ export const Navbar = () => {
         <a
           href="#projects"
           className={`border-b-2 border-purple px-3 py-1  transition-all ${
-            pathname === "/projects" ? "border-b-8 " : null
+            pathname === "#projects" ? "border-b-8 " : null
           } 
           ${theme === "light" ? "" : "text-white"}
           `}
@@ -57,7 +57,7 @@ export const Navbar = () => {
         <a
           href="#contact"
           className={`border-b-2 border-purple px-3 py-1  transition-all ${
-            pathname === "/contact" ? "border-b-8 " : null
+            pathname === "#contact" ? "border-b-8 " : null
           }
           ${theme === "light" ? "" : "text-white"}
           `}

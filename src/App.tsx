@@ -9,7 +9,7 @@ export default function App() {
   const { pathname } = useLocation();
   return (
     <>
-      {pathname !== "/secret-game" ? <Navbar /> : null}
+      {pathname !== "/secret-game" && pathname === "/" ? <Navbar /> : null}
       <Routes>
         <Route path={"*"} element={<NotFound />} />
         <Route path={"/"} element={<Home />} />
