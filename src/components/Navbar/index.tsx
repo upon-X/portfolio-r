@@ -10,11 +10,22 @@ export const Navbar = () => {
   const { pathname } = useLocation();
   const { theme } = useTheme();
   useEffect(() => {
-    window.innerWidth > 768 ? setMenuNavRespo(false) : null;
-  }, [menuNavRespo]);
+    const handleResize = () => {
+      if (window.innerWidth > 768) {
+        setMenuNavRespo(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    // Check the width initially
+    handleResize();
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <nav
-      className={`fixed top-0 m-0 h-[7vh] w-screen flex text-xl items-center justify-around font-semibold text-gray uppercase select-none bg-transparent z-40 backdrop-blur-sm`}
+      className={`fixed top-0 m-0 h-[7vh] w-screen flex text-xl items-center justify-around font-semibold uppercase select-none bg-white bg-opacity-0 z-40 backdrop-blur-sm `}
     >
       <a
         href="#"
@@ -32,21 +43,22 @@ export const Navbar = () => {
       >
         {/* About Me Link */}
         <a
+          id="navlink-am"
           href="#about-me"
-          className={`border-b-2 border-purple px-3 py-1   transition-all ${
+          className={`border-b-2 border-purple px-3 py-1 transition-all ${
             pathname === "#about-me" ? "border-b-8" : null
           }
           ${theme === "light" ? "" : "text-white"}
-          hover:shadow-inner
           `}
         >
           {language === "es" ? "Sobre Mi" : "About Me"}
         </a>
         {/* Projects Link */}
         <a
+          id="navlink-pj"
           href="#projects"
-          className={`border-b-2 border-purple px-3 py-1  transition-all ${
-            pathname === "#projects" ? "border-b-8 " : null
+          className={`border-b-2 border-purple px-3 py-1 transition-all ${
+            pathname === "/#projects" ? "border-b-8 " : null
           } 
           ${theme === "light" ? "" : "text-white"}
           `}
@@ -55,9 +67,10 @@ export const Navbar = () => {
         </a>
         {/* Contact Link */}
         <a
+          id="navlink-cn"
           href="#contact"
-          className={`border-b-2 border-purple px-3 py-1  transition-all ${
-            pathname === "#contact" ? "border-b-8 " : null
+          className={`border-b-2 border-purple px-3 py-1 transition-all ${
+            pathname === "/#contact" ? "border-b-8" : null
           }
           ${theme === "light" ? "" : "text-white"}
           `}
