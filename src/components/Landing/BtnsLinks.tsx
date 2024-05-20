@@ -6,7 +6,7 @@ export const BtnsLinks = () => {
   const { language } = useTranslation();
 
   return (
-    <div className="flex justify-center gap-10 md:gap-12 text-purple">
+    <div className="flex justify-center gap-10 md:gap-12 text-purple sm:gap-6">
       <Link
         aria-label="Read more about me, my skills and my experience on IT"
         to={"/about-me"}
