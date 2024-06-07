@@ -35,14 +35,6 @@
     font-weight: 600;
   }
 
-  #navlink-am:hover,
-  #navlink-pj:hover,
-  #navlink-cn:hover {
-    color: white;
-    background-color: #9d6fff;
-    border-radius: 200px;
-  }
-
   @media (max-width: 768px) {
     section {
       padding: 0 5vw;

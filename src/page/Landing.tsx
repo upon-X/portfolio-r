@@ -7,7 +7,7 @@ export default function Landing() {
   const { theme } = useTheme();
   return (
     <section
-      id=""
+      id="landing"
       className={`flex flex-col justify-center min-h-screen max-h-screen gap-40 bg-no-repeat bg-cover ${
         theme === "light"
           ? "bg-[url('/bglanding.webp')] "
