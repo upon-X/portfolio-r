@@ -1,8 +1,10 @@
+import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import AboutMe from "./AboutMe";
-import Contact from "./Contact";
 import Landing from "./Landing";
-import Projects from "./Projects";
+
+const Projects = React.lazy(() => import("./Projects"));
+const Contact = React.lazy(() => import("./Contact"));
 
 export default function Home() {
   const { theme } = useTheme();

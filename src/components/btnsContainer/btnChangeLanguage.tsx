@@ -22,7 +22,7 @@ export const BtnChangeLanguage: React.FC = () => {
       md:hover:border-darkTheme md:border-white sm:hover:border-darkTheme sm:border-white`}
     >
       <img
-        className="rounded-full w-[44px] h-[36px] aspect-square"
+        className="rounded-full w-[44px] h-[36px] aspect-video"
         src={`https://flagsapi.com/${
           language === "es" ? "ES" : "GB"
         }/flat/64.png`}

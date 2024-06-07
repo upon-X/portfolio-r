@@ -20,7 +20,7 @@ export default function Projects() {
         {content?.projects[language].everyProject.map(
           (_project: undefined, index: number) => {
             return (
-              <div>
+              <div key={index}>
                 <ProjectComponent projectIndex={index} />
                 {index !==
                   content.projects[language].everyProject.length - 1 && (

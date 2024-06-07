@@ -1,5 +1,5 @@
 import { FaCode, FaRegAddressCard, FaRegMessage } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { useTranslation } from "../../context/TranslationContext";
 
 export const BtnsLinks = () => {
@@ -7,9 +7,9 @@ export const BtnsLinks = () => {
 
   return (
     <div className="flex justify-center gap-10 md:gap-12 text-purple sm:gap-6">
-      <Link
+      <a
         aria-label="Read more about me, my skills and my experience on IT"
-        to={"/about-me"}
+        href={"#about-me"}
         className="flex flex-col items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
           transition-all
@@ -23,11 +23,11 @@ export const BtnsLinks = () => {
         >
           {language === "es" ? "Sobre mi" : "About me"}
         </p>
-      </Link>
+      </a>
 
-      <Link
+      <a
         aria-label="Read more about my projects and visit their deploy"
-        to={"/projects"}
+        href={"#projects"}
         className="flex items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
           transition-all
@@ -41,11 +41,11 @@ export const BtnsLinks = () => {
         >
           {language === "es" ? "Proyectos" : "Projects"}
         </p>
-      </Link>
+      </a>
 
-      <Link
+      <a
         aria-label="Go on and contact me by filling an email-form"
-        to={"/contact"}
+        href={"#contact"}
         className="flex items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
           transition-all
@@ -59,7 +59,7 @@ export const BtnsLinks = () => {
         >
           {language === "es" ? "Contacto" : "Contact"}
         </p>
-      </Link>
+      </a>
     </div>
   );
 };
