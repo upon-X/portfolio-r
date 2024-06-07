@@ -13,6 +13,8 @@ export const BtnChangeLanguage: React.FC = () => {
   };
   return (
     <button
+      key="change language button"
+      id="ChangeLanguageTheme"
       name="change language"
       aria-label="Change Language"
       onClick={handleLanguageChange}
