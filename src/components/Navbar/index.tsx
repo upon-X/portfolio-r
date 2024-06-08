@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import { useTranslation } from "../../context/TranslationContext";
 import { useTheme } from "../../context/ThemeContext";
 import { useEffect, useState } from "react";
@@ -9,7 +8,6 @@ import { NavbarLink } from "./NavbarLink";
 export const Navbar = () => {
   const [menuNavRespo, setMenuNavRespo] = useState(false);
   const { language } = useTranslation();
-  const { pathname } = useLocation();
   const { theme } = useTheme();
   useEffect(() => {
     const handleResize = () => {
