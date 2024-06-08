@@ -102,16 +102,25 @@ export const Navbar = () => {
           X
         </button>
         <li className="hover:text-darkTheme">
-          <a href="#about-me"> {language === "es" ? "Sobre Mi" : "About Me"}</a>
+          <NavbarLink
+            navlink_id="about me"
+            link="about-me"
+            navlink_text={language === "es" ? "Sobre Mi" : "About Me"}
+          />
         </li>
         <li className="hover:text-darkTheme">
-          <a href="#projects">
-            {" "}
-            {language === "es" ? "Proyectos" : "Projects"}
-          </a>
+          <NavbarLink
+            navlink_id="projects"
+            link="projects"
+            navlink_text={language === "es" ? "Proyectos" : "Projects"}
+          />
         </li>
         <li className="hover:text-darkTheme">
-          <a href="#contact"> {language === "es" ? "Contacto" : "Contact"}</a>
+          <NavbarLink
+            navlink_id="contact"
+            link="contact"
+            navlink_text={language === "es" ? "Contacto" : "Contact"}
+          />
         </li>
         <li>
           <BtnsContainer />
