@@ -47,20 +47,22 @@ export const ContactForm = () => {
     <form
       id="form"
       onSubmit={handleSubmit}
-      className={`flex flex-col items-end gap-4 2xl:h-[450px] text-xl rounded-lg shadow-lg p-8
+      className={`flex flex-col items-end gap-4 2xl:h-[450px] text-xl rounded-lg shadow-lg p-8 
       2xl:w-[800px] 2xl:grid 2xl:grid-cols-2 2xl:grid-row-3
       xl:w-[700px] xl:grid xl:grid-cols-2 xl:grid-row-3
       lg:w-[500px]
       md:w-[400px]
       sm:w-[90vw] sm:px-4
-      ${theme === "light" ? "" : "bg-[#2c2c2c]"}
+      ${theme === "light" ? "bg-[#f5f5f5]" : "bg-[#2c2c2c]"}
       `}
     >
       <label className="flex flex-col gap-1 w-full">
         {content?.contact[language].form.name}
         <input
-          className={`text-lg rounded-md ${
-            theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
+          className={`text-lg rounded-md border ${
+            theme === "light"
+              ? "bg-[#ffffff] border-[#e7e7e7]"
+              : "bg-darkTheme border-[#818181]"
           } focus:outline-purple outline-purple`}
           type="text"
           id="form_name"
@@ -74,8 +76,16 @@ export const ContactForm = () => {
       <label className="flex flex-col gap-1 w-full">
         {content?.contact[language].form.email}
         <input
-          className={`text-lg rounded-md ${
-            theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"
+          className={`text-lg rounded-md border ${
+            email
+              ? !email.includes("@")
+                ? "border-inputWrong focus:outline-inputWrong"
+                : "border-inputRight focus:outline-inputRight"
+              : theme === "light"
+              ? "border-[#e7e7e7]"
+              : "border-[#818181]"
+          } ${
+            theme === "light" ? "bg-[#ffffff]" : "bg-darkTheme"
           } focus:outline-purple outline-purple`}
           type="email"
           id="form_email"
@@ -87,17 +97,34 @@ export const ContactForm = () => {
         />
       </label>
       <label className="flex flex-col gap-2 w-full 2xl:col-span-2 xl:col-span-2">
-        {content?.contact[language].form.message}
+        <span className="flex justify-between">
+          {content?.contact[language].form.message}
+          {message ? (
+            <span className={message.length >= 600 ? "text-[#ff8f44]" : ""}>
+              {message.length > 0 ? message.length : null}/600
+            </span>
+          ) : null}
+        </span>
         <textarea
-          className={`text-lg rounded-md min-h-[200px] max-h-[200px] outline-purple focus:outline-purple p-2 resize-none
-          ${theme === "light" ? "bg-[#fafafa]" : "bg-darkTheme"}
+          className={`text-lg rounded-md min-h-[200px] max-h-[200px] outline-purple focus:outline-purple p-2 resize-none border
+          ${theme === "light" ? "bg-[#ffffff]" : "bg-darkTheme"} ${
+            message
+              ? message.length === 600
+                ? "border-[#ff8f44] outline-[#ff8f44] focus:outline-[#ff8f44]"
+                : theme === "light"
+                ? "border-[#e7e7e7]"
+                : "border-[#818181]"
+              : theme === "light"
+              ? "border-[#e7e7e7]"
+              : "border-[#818181]"
+          }
           `}
           id="form_message"
           name="form_message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
-          minLength={10}
-          maxLength={1200}
+          minLength={1}
+          maxLength={600}
           required
         />
       </label>

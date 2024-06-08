@@ -44,6 +44,8 @@ export default {
         purple: "#9D6FFF",
         purpleDark: "#2F214B",
         darkTheme: "#1d1d1d",
+        inputWrong: "#ff9e9e",
+        inputRight: "#8ebb8e",
       },
       fontFamily: {
         juliusFF: ["Julius Sans One", "sans-serif"],
