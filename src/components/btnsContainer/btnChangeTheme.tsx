@@ -10,6 +10,7 @@ export const BtnChangeTheme: React.FC = () => {
 
   return (
     <button
+      key="change theme button"
       id="ChangeColorTheme"
       aria-label="Change Color Theme"
       name="Change Color Theme"

@@ -3,6 +3,8 @@ import { useTranslation } from "../../context/TranslationContext";
 import { useTheme } from "../../context/ThemeContext";
 import { useEffect, useState } from "react";
 import { BtnsContainer } from "../btnsContainer";
+import { Link } from "react-scroll";
+import { NavbarLink } from "./NavbarLink";
 
 export const Navbar = () => {
   const [menuNavRespo, setMenuNavRespo] = useState(false);
@@ -26,14 +28,15 @@ export const Navbar = () => {
     <nav
       className={`fixed top-0 m-0 h-[7vh] w-screen flex text-xl items-center justify-around font-semibold uppercase select-none bg-white bg-opacity-0 z-40 backdrop-blur-sm `}
     >
-      <a
-        href="#"
-        className={`border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all
+      <Link
+        to="landing"
+        smooth={true}
+        className={`border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all cursor-pointer
         ${theme === "light" ? "" : "text-white"}
         `}
       >
         VM
-      </a>
+      </Link>
       <div
         className="flex items-center gap-3
           md:hidden
@@ -41,43 +44,26 @@ export const Navbar = () => {
         "
       >
         {/* About Me Link */}
-        <a
-          id="navlink-am"
-          href="#about-me"
-          className={`border-b-2 border-purple px-3 py-1 transition-all ${
-            pathname === "#about-me" ? "border-b-8" : null
-          }
-          ${theme === "light" ? "" : "text-white"}
-          `}
-        >
-          {language === "es" ? "Sobre Mi" : "About Me"}
-        </a>
+        <NavbarLink
+          navlink_id="about me"
+          link="about-me"
+          navlink_text={language === "es" ? "Sobre Mi" : "About Me"}
+        />
         {/* Projects Link */}
-        <a
-          id="navlink-pj"
-          href="#projects"
-          className={`border-b-2 border-purple px-3 py-1 transition-all ${
-            pathname === "/#projects" ? "border-b-8 " : null
-          } 
-          ${theme === "light" ? "" : "text-white"}
-          `}
-        >
-          {language === "es" ? "Proyectos" : "Projects"}
-        </a>
+        <NavbarLink
+          navlink_id="projects"
+          link="projects"
+          navlink_text={language === "es" ? "Proyectos" : "Projects"}
+        />
         {/* Contact Link */}
-        <a
-          id="navlink-cn"
-          href="#contact"
-          className={`border-b-2 border-purple px-3 py-1 transition-all ${
-            pathname === "/#contact" ? "border-b-8" : null
-          }
-          ${theme === "light" ? "" : "text-white"}
-          `}
-        >
-          {language === "es" ? "Contacto" : "Contact"}
-        </a>
+        <NavbarLink
+          navlink_id="contact"
+          link="contact"
+          navlink_text={language === "es" ? "Contacto" : "Contact"}
+        />
         <BtnsContainer />
       </div>
+      {/* ---------------------------Menu mobile version--------------------------- */}
       <button
         onClick={() => setMenuNavRespo(!menuNavRespo)}
         className={`hidden sm:block md:block border-2 border-purple rounded-full py-1.5 px-3 ${
