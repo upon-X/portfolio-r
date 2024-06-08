@@ -6,9 +6,9 @@ import { sendAlert } from "../sweetAlerts";
 import { useTheme } from "../../context/ThemeContext";
 
 export const ContactForm = () => {
-  const serviceId = import.meta.env.EMAILJS_SERVICE_ID;
-  const templateId = import.meta.env.EMAILJS_TEMPLATE_ID;
-  const publicKey = import.meta.env.EMAILJS_PUBLIC_KEY;
+  const serviceId = "service_kpadu0l";
+  const templateId = "template_4mme38a";
+  const publicKey = "Poy9PZERtei7dEa-6";
   const { theme } = useTheme();
   const { language, content } = useTranslation();
   const [name, setName] = useState("");

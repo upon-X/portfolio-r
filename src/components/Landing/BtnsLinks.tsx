@@ -14,7 +14,7 @@ export const BtnsLinks = () => {
         smooth={true}
         className="flex flex-col items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
-          transition-all
+          transition-all cursor-pointer
           "
       >
         <FaRegAddressCard className="w-[3rem] h-[3rem] md:w-[2.3rem] md:h-[2.3rem] sm:w-[2rem] sm:h-[2rem]" />
@@ -33,7 +33,7 @@ export const BtnsLinks = () => {
         smooth={true}
         className="flex items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
-          transition-all
+          transition-all cursor-pointer
           "
       >
         <FaCode className="w-[3rem] h-[3rem] md:w-[2.3rem] md:h-[2.3rem] sm:w-[2rem] sm:h-[2rem]" />
@@ -52,7 +52,7 @@ export const BtnsLinks = () => {
         smooth={true}
         className="flex items-center justify-center p-3 bg-transparent rounded-md border-x-4 border-purple
           hover:-translate-y-2 hover:text-white hover:bg-purple group
-          transition-all
+          transition-all cursor-pointer
           "
       >
         <FaRegMessage className="w-[3rem] h-[3rem] md:w-[2.3rem] md:h-[2.3rem] sm:w-[2rem] sm:h-[2rem]" />
