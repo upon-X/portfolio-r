@@ -1,6 +1,8 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useTranslation } from "../../context/TranslationContext";
 import { useTheme } from "../../context/ThemeContext";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import imageload from "/imageload2.webp";
 
 // Mediante la prop paso el numero del index en el array que hay en content, entonces se renderiza el proyecto
 type Props = {
@@ -80,7 +82,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           projectIndex % 2 !== 0 ? " col-start-1 row-start-1" : ""
         } 2xl:scale-90 flex items-center justify-end sm:justify-center md:justify-center lg:justify-center overflow-hidden`}
       >
-        <img
+        <LazyLoadImage
           className="z-10 w-full max-h-3/4 aspect-video 
           lg:w-3/4
           md:w-3/4
@@ -88,6 +90,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           "
           src={content?.projects[language].everyProject[projectIndex].image}
           alt={`image of the project n${projectIndex}`}
+          placeholderSrc={imageload}
         />
       </div>
     </div>

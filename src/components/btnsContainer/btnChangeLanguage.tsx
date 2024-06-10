@@ -23,11 +23,17 @@ export const BtnChangeLanguage: React.FC = () => {
       } overflow-hidden rounded-full hover:border-purple
       md:hover:border-darkTheme md:border-white sm:hover:border-darkTheme sm:border-white`}
     >
-      <img
+      {/* Gasta muchos recursos */}
+      {/* <img
         className="rounded-full w-[44px] h-[36px] aspect-video"
         src={`https://flagsapi.com/${
           language === "es" ? "ES" : "GB"
         }/flat/64.png`}
+        alt={language === "es" ? "Version en español" : "English version"}
+      /> */}
+      <img
+        className="rounded-full w-[44px] h-[36px] aspect-video"
+        src={language === "es" ? "/flagES.webp" : "/flagGB.webp"}
         alt={language === "es" ? "Version en español" : "English version"}
       />
     </button>

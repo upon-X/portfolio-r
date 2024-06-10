@@ -16,7 +16,13 @@ import { ContentSecretGame } from "../translations/SecretGame/contentSecretGame"
 import { ThemeProvider } from "./ThemeContext";
 
 export const ContextProvider = ({ children }: ChildrenPropsType) => {
-  const [language, setLanguage] = useState<LanguageType>("es");
+  const [language, setLanguage] = useState<LanguageType>(() => {
+    // Recuperar el lenguaje del localStorage o usar el valor por defecto
+    const savedLanguage = sessionStorage.getItem(
+      "language_valemiche_portfolio"
+    ) as LanguageType;
+    return savedLanguage || "es";
+  });
   const [content, setContent] = useState<
     TranslationContextType["content"] | undefined
   >();
@@ -41,6 +47,8 @@ export const ContextProvider = ({ children }: ChildrenPropsType) => {
       notFound: NotFoundModule,
       secretGame: SecretGameModule,
     });
+
+    sessionStorage.setItem("language_valemiche_portfolio", language);
   }, [language]);
 
   const handleLanguageChange = (newLanguage: LanguageType) => {
