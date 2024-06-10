@@ -2,6 +2,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useTranslation } from "../../context/TranslationContext";
 import { useTheme } from "../../context/ThemeContext";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import imageload from "/imageload2.webp";
 
 // Mediante la prop paso el numero del index en el array que hay en content, entonces se renderiza el proyecto
 type Props = {
@@ -89,6 +90,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
           "
           src={content?.projects[language].everyProject[projectIndex].image}
           alt={`image of the project n${projectIndex}`}
+          placeholderSrc={imageload}
         />
       </div>
     </div>
