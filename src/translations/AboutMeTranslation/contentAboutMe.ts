@@ -5,21 +5,17 @@ export const ContentAboutMe = {
       "Here you will find more information about me, what I do, and my current skills at programming",
     shortDesc: {
       title: "Who I am?",
-      p1Highlight: "Frontend Web Developer ",
+      p1Highlight: "Full Stack Web Developer ",
       p1Last:
-        "building the Front-end of Websites and Web Applications that leads to the success of the overall product.",
+        "building both the Front-end and Back-end of Websites and Web Applications that lead to the success of the overall product.",
       p2First:
         "I also like sharing content related to the stuff that I have learned over the years in",
-      p2Highlight: " Web Development ",
-      p2Second:
-        "so it can help other people of the Dev Community. Feel free to Connect or Follow me on my ",
-      p2Highlight2: "LinkedIn",
-      p2Last:
-        " where I post useful content related to Web Development and Programming",
+      p2Highlight: " Web and Software Development ",
+      p2Second: "so it can help other people in the Dev Community.",
       p3First: "I'm open to",
       p3Highlight: " Job opportunities ",
       p3Second:
-        "where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don't hesitate to",
+        "where I can contribute, learn, and grow. If you have a good opportunity that matches my skills and experience, then don't hesitate to",
       p3Hightlight2: " contact me.",
     },
     mySkills: {
@@ -29,48 +25,61 @@ export const ContentAboutMe = {
       title: "+1 year of experience",
       jobs: [
         {
-          title: "Desarollador Full Stack",
+          title: "Full Stack Developer",
           company: { name: "Freelance", url: "https://valemiche.com.ar" },
           started: "02/2023",
           finished: "Currently",
-          responsabilities: [
-            "Desarrollar sitios web para establecimientos comerciales",
-            "Desarrollar aplicaciones para gestión de stock",
-            "Crear diseños que mejoren la UX/UI",
-            "Realizar proyectos open-source para la comunidad de desarrolladores",
+          responsibilities: [
+            "Develop websites for commercial establishments",
+            "Develop applications for stock management",
+            "Create designs that improve UX/UI",
           ],
         },
         {
-          title: "Desarrollador Front-end",
+          title: "Front-end Developer",
           company: { name: "Awaq ONGD", url: "https://somosawaq.org" },
           started: "03/2024",
+          finished: "07/2024",
+          responsibilities: [
+            "Develop and redesign the organization's website",
+            "Organize and delegate tasks in a team of developers",
+            "Implement Scrum methodology",
+          ],
+        },
+        {
+          title: "Full Stack Developer",
+          company: {
+            name: "Sherpa",
+            url: "https://www.linkedin.com/company/sherpawtf/",
+          },
+          started: "06/2024",
           finished: "Currently",
-          responsabilities: [
-            "Desarrollar y rediseñar el sitio web de la organización",
-            "Organizar y delegar tareas en un equipo de desarrolladores",
-            "Implementar metodologia Scrum",
+          responsibilities: [
+            "Development of backend services and controllers in TypeScript and Node.js",
+            "Perform server maintenance and updates",
+            "Implement Agile methodology in the development team",
           ],
         },
       ],
     },
   },
   es: {
-    title: "Sobre Mi",
+    title: "Sobre Mí",
     subtitle:
-      "Aquí encontrarás información sobre mí, lo que hago y mis habilidades tecnicas en la programación",
+      "Aquí encontrarás información sobre mí, lo que hago y mis habilidades técnicas en la programación",
     shortDesc: {
-      title: "¿Quien soy?",
-      p1Highlight: "Desarrollador Web especializado en tecnologias Frontend, ",
+      title: "¿Quién soy?",
+      p1Highlight: "Desarrollador Web Full Stack, ",
       p1Last:
-        "construyendo sitios web para contribuir a la inserción de mis clientes en el entorno virtual.",
+        "construyendo una hermosa visual y un completo servidor para sitios web y aplicaciones que contribuyen al éxito del producto en general.",
       p2First:
-        "También me gusta compartir contenido relacionado con las cosas que he aprendido a lo largo de los años en el",
-      p2Highlight: " Desarrollo Web ",
+        "También me gusta compartir contenido relacionado con las cosas que he aprendido a lo largo de los años en",
+      p2Highlight: " Desarrollo Web y de Software ",
       p2Last: "para poder ayudar a otros de la comunidad de desarrolladores.",
-      p3First: "Estoy abierto a ",
+      p3First: "Estoy abierto a",
       p3Highlight: " oportunidades de trabajo ",
       p3Second:
-        "donde puedo contribuir, aprender y crecer. Si posees alguna que coincida con mis habilidades y experiencia, no dudes en",
+        "donde pueda contribuir, aprender y crecer. Si tienes una buena oportunidad que coincida con mis habilidades y experiencia, no dudes en",
       p3Hightlight2: " contactarme.",
     },
     mySkills: {
@@ -80,26 +89,39 @@ export const ContentAboutMe = {
       title: "+1 año de experiencia",
       jobs: [
         {
-          title: "Desarollador Full Stack",
+          title: "Desarrollador Full Stack",
           company: { name: "Freelance", url: "https://valemiche.com.ar" },
           started: "02/2023",
           finished: "Actualmente",
-          responsabilities: [
+          responsibilities: [
             "Desarrollar sitios web para establecimientos comerciales",
             "Desarrollar aplicaciones para gestión de stock",
             "Crear diseños que mejoren la UX/UI",
-            "Realizar proyectos open-source para la comunidad de desarrolladores",
           ],
         },
         {
           title: "Desarrollador Front-end",
           company: { name: "Awaq ONGD", url: "https://somosawaq.org" },
           started: "03/2024",
-          finished: "Actualmente",
-          responsabilities: [
+          finished: "07/2024",
+          responsibilities: [
             "Desarrollar y rediseñar el sitio web de la organización",
             "Organizar y delegar tareas en un equipo de desarrolladores",
-            "Implementar metodologia Scrum",
+            "Implementar metodología Scrum",
+          ],
+        },
+        {
+          title: "Desarrollador Full Stack",
+          company: {
+            name: "Sherpa",
+            url: "https://www.linkedin.com/company/sherpawtf/",
+          },
+          started: "06/2024",
+          finished: "Actualmente",
+          responsibilities: [
+            "Desarrollo de servicios y controladores del backend en TypeScript y Node.js",
+            "Desempeñar tareas de mantenimiento y actualización del servidor",
+            "Implementar la metodología Agile en el equipo de desarrollo",
           ],
         },
       ],

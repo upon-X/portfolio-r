@@ -1,8 +1,8 @@
 export const ContentLanding = {
   en: {
-    jobTitle: "Front-end Developer",
+    jobTitle: "Full Stack Developer",
   },
   es: {
-    jobTitle: "Desarrollador Front-end",
+    jobTitle: "Desarrollador Full Stack",
   },
 };

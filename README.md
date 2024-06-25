@@ -1,6 +1,6 @@
-# 5.3.2 Portfolio [valemiche.com.ar](https://valemiche.com.ar)
+# 5.3.3 Portfolio [valemiche.com.ar](https://valemiche.com.ar)
 
-_version updated : 07/06/24_
+_version updated : 25/06/24_
 <br>
 <br>
 
@@ -8,7 +8,7 @@ This is a SEO friendly portfolio
 
 - "5" = tech stack version
 - "3" = UX/UI version
-- "2" = patchs and bugs solving
+- "3" = patchs and bugs solving
 
 <br>
 
