@@ -8,6 +8,7 @@ export const myTechAndSoftSkills = [
   "React",
   "Next.js",
   "Redux",
+  "Zustand",
   "Node.js",
   "Express.js",
   "PostgreSQL",
@@ -20,7 +21,10 @@ export const myTechAndSoftSkills = [
   "Netlify",
   "Railway",
   "Cloudinary",
+  "Jira",
+  "Trello",
   "Webflow",
   "Figma",
   "Scrum",
+  "Web Scraping",
 ];
