@@ -1,7 +1,6 @@
 import { useTranslation } from "../context/TranslationContext";
 import { Description } from "../components/AboutMe/Description";
 import { MySkils } from "../components/AboutMe/MySkills";
-import myPhoto from "../assets/myphotonobg.webp";
 import { useTheme } from "../context/ThemeContext";
 import { Experience } from "../components/AboutMe/Experience";
 
@@ -12,7 +11,7 @@ export default function AboutMe() {
   return (
     <section
       id="about-me"
-      className={`flex flex-col gap-10 items-center py-14
+      className={`flex flex-col gap-24 items-center py-14
       ${theme === "light" ? "" : "bg-darkTheme text-white"}
       `}
     >
@@ -23,13 +22,7 @@ export default function AboutMe() {
       {/* <h4 className="text-center text-2xl">
         {content?.aboutMe[language].subtitle}
       </h4> */}
-      <div className=" overflow-hidden rounded-full border-4 border-purple ">
-        <img
-          className="w-[230px] h-[230px] aspect-square"
-          src={myPhoto}
-          alt="Valentino Micheloni Photo"
-        />
-      </div>
+
       <div
         className="flex flex-col gap-16
         2xl:grid 2xl:grid-cols-2

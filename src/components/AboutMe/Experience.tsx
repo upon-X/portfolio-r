@@ -12,7 +12,7 @@ interface Job {
   company: Company;
   started: string;
   finished: string;
-  responsabilities: Array<string>;
+  responsibilities: Array<string>;
 }
 
 export const Experience = () => {
@@ -47,7 +47,7 @@ export const Experience = () => {
                   theme === "light" ? "text-darkTheme" : "text-white"
                 }`}
               >
-                {job.responsabilities.map((responsibility, index) => (
+                {job.responsibilities.map((responsibility, index) => (
                   <li
                     key={index}
                     className="text-base list-['+'] my-3 leading-6 font-medium"
