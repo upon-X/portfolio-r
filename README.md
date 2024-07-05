@@ -8,7 +8,7 @@ This is a SEO friendly portfolio
 
 - "5" = tech stack version
 - "3" = UX/UI version
-- "3" = patchs and bugs solving
+- "3" = bugs and glitchs solving
 
 <br>
 
