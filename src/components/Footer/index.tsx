@@ -7,14 +7,14 @@ export const Footer = () => {
   const { theme } = useTheme();
   const linkedinUrl = "https://www.linkedin.com/in/valentino-micheloni/";
   const githubUrl = "https://github.com/upon-X";
-
+  const maltUrl = "https://www.malt.es/profile/valemiche";
   return (
     <footer
       className={`flex justify-center items-center gap-4 sm:flex-col sm:text-center ${
         theme === "light"
           ? "bg-transparent text-darkTheme"
           : "bg-darkTheme text-white"
-      }text-lg md:text-base sm:text-base h-[8vh] p-6 sm:p-16`}
+      }text-lg md:text-base sm:text-base h-[8rem] p-6 sm:p-16`}
     >
       <p className={` ${theme === "light" ? "text-darkTheme" : "text-white"}`}>
         {content?.footer[language].rightsReserved}
@@ -37,6 +37,9 @@ export const Footer = () => {
           href={linkedinUrl}
         >
           <FaLinkedin />
+        </a>
+        <a aria-label="Visit my malt account" target="_blank" href={maltUrl}>
+          <img className="w-[32px]" src="/malt_logo.webp" />
         </a>
       </div>
     </footer>
