@@ -55,7 +55,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
         >
           {content?.projects[language].everyProject[projectIndex].description}
         </p>
-        <div className="flex justify-start gap-2 flex-wrap mt-4">
+        <div className="flex justify-start gap-2 flex-wrap mt-4 w-full">
           {content?.projects[language].everyProject[
             projectIndex
           ].skillsUsed.map((skill: string, index: number) => (
@@ -83,7 +83,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
         } 2xl:scale-90 flex items-center justify-end sm:justify-center md:justify-center lg:justify-center overflow-hidden`}
       >
         <LazyLoadImage
-          className="z-10 w-full max-h-3/4 aspect-video 
+          className="z-10 w-full m-auto max-h-3/4 aspect-video 
           lg:w-3/4
           md:w-3/4
           sm:w-3/4

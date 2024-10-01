@@ -28,6 +28,7 @@ export const Footer = () => {
           aria-label="Visit my github account"
           target="_blank"
           href={githubUrl}
+          className="hover:text-purple transition-all"
         >
           <FaGithub />
         </a>
@@ -35,10 +36,16 @@ export const Footer = () => {
           aria-label="Visit my linkedIn account"
           target="_blank"
           href={linkedinUrl}
+          className="hover:text-purple transition-all"
         >
           <FaLinkedin />
         </a>
-        <a aria-label="Visit my malt account" target="_blank" href={maltUrl}>
+        <a
+          aria-label="Visit my malt account"
+          target="_blank"
+          href={maltUrl}
+          className="hover:text-purple transition-all"
+        >
           <img className="w-[32px]" src="/malt_logo.webp" />
         </a>
       </div>
