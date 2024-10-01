@@ -23,7 +23,7 @@
     "react-lazy-load-image-component": "^1.6.0",
     "react-router-dom": "^6.23.0",
     "react-scroll": "^1.9.0",
-    "sweetalert2": "^11.10.8"
+    "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
