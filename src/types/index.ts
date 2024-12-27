@@ -24,6 +24,7 @@ export const myTechAndSoftSkills: SkillCategory[] = [
       "Node.js",
       "Express.js",
       "PostgreSQL",
+      "MongoDB",
       "Firebase",
       "Docker",
     ],
@@ -40,7 +41,7 @@ export const myTechAndSoftSkills: SkillCategory[] = [
       "Jira",
     ],
   },
-  { Design: ["Figma", "Webflow", "Bubble"] },
+  { Design: ["Figma", "Webflow", "Bubble", "Photoshop"] },
 ];
 
 function mapSkills(

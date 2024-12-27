@@ -23,16 +23,18 @@ export const MySkils = () => {
           >
             <h4 className={`text-xl font-bold`}>{skill.category}</h4>
             <div className="flex gap-2 flex-wrap border-t pt-4 pb-2">
-              {skill.skills.map((skill, index) => (
-                <div
-                  key={index}
-                  className={`border-2 border-purple rounded-md px-[0.5rem] py-[0.2rem] font-semibold ${
-                    theme === "light" ? "text-darkTheme" : "text-purple"
-                  } hover:bg-purple hover:text-white hover:-translate-y-1 transition-all`}
-                >
-                  {skill}
-                </div>
-              ))}
+              {skill.skills.map((skill, index) => {
+                return (
+                  <div
+                    key={index}
+                    className={`border-2 border-purple rounded-md px-[0.5rem] py-[0.2rem] font-semibold ${
+                      theme === "light" ? "text-darkTheme" : "text-purple"
+                    } hover:bg-purple hover:text-white hover:-translate-y-1 transition-all`}
+                  >
+                    {skill}
+                  </div>
+                );
+              })}
             </div>
           </div>
         ))}

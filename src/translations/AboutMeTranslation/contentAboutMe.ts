@@ -50,7 +50,7 @@ export const ContentAboutMe = {
           title: "Full Stack Developer",
           company: {
             name: "Sherpa",
-            url: "https://www.linkedin.com/company/sherpawtf/",
+            url: "https://sherpa.wtf",
           },
           started: "06/2024",
           finished: "Currently",
@@ -114,7 +114,7 @@ export const ContentAboutMe = {
           title: "Desarrollador Full Stack",
           company: {
             name: "Sherpa",
-            url: "https://www.linkedin.com/company/sherpawtf/",
+            url: "https://sherpa.wtf",
           },
           started: "06/2024",
           finished: "Actualmente",
