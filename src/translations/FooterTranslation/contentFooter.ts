@@ -1,8 +1,8 @@
 export const ContentFooter = {
   en: {
-    rightsReserved: "2024 Valentino Micheloni",
+    rightsReserved: "2025 Valentino Micheloni",
   },
   es: {
-    rightsReserved: "2024 Valentino Micheloni",
+    rightsReserved: "2025 Valentino Micheloni",
   },
 };

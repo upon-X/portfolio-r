@@ -5,7 +5,7 @@ export const ContentAboutMe = {
       "Here you will find more information about me, what I do, and my current skills at programming",
     shortDesc: {
       title: "Who I am?",
-      p1Highlight: "Full Stack Web Developer ",
+      p1Highlight: "Full Stack Developer ",
       p1Last:
         "building both the Front-end and Back-end of Websites and Web Applications that lead to the success of the overall product.",
       p2First:
@@ -26,7 +26,7 @@ export const ContentAboutMe = {
       jobs: [
         {
           title: "Full Stack Developer",
-          company: { name: "Freelance", url: "https://valemiche.com.ar" },
+          company: { name: "Freelance", url: "https://valemiche.com" },
           started: "02/2023",
           finished: "Currently",
           responsibilities: [
@@ -55,7 +55,7 @@ export const ContentAboutMe = {
           started: "06/2024",
           finished: "Currently",
           responsibilities: [
-            "Development of backend services and controllers in TypeScript and Node.js",
+            "Development of chatbots with AI",
             "Perform server maintenance and updates",
             "Implement Agile methodology in the development team",
           ],
@@ -69,7 +69,7 @@ export const ContentAboutMe = {
       "Aquí encontrarás información sobre mí, lo que hago y mis habilidades técnicas en la programación",
     shortDesc: {
       title: "¿Quién soy?",
-      p1Highlight: "Desarrollador Web Full Stack, ",
+      p1Highlight: "Desarrollador Full Stack, ",
       p1Last:
         "construyendo una hermosa visual y un completo servidor para sitios web y aplicaciones que contribuyen al éxito del producto en general.",
       p2First:
@@ -90,7 +90,7 @@ export const ContentAboutMe = {
       jobs: [
         {
           title: "Desarrollador Full Stack",
-          company: { name: "Freelance", url: "https://valemiche.com.ar" },
+          company: { name: "Freelance", url: "https://valemiche.com" },
           started: "02/2023",
           finished: "Actualmente",
           responsibilities: [
@@ -119,7 +119,7 @@ export const ContentAboutMe = {
           started: "06/2024",
           finished: "Actualmente",
           responsibilities: [
-            "Desarrollo de servicios y controladores del backend en TypeScript y Node.js",
+            "Desarrollo de chatbots con IA",
             "Desempeñar tareas de mantenimiento y actualización del servidor",
             "Implementar la metodología Agile en el equipo de desarrollo",
           ],
