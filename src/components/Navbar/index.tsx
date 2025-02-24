@@ -24,7 +24,7 @@ export const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 m-0 h-[7vh] w-screen flex text-xl items-center justify-around font-semibold uppercase select-none bg-white bg-opacity-0 z-40 backdrop-blur-sm `}
+      className={`fixed top-0 m-0 h-[7vh] w-screen flex text-xl items-center justify-around font-semibold uppercase select-none bg-black bg-opacity-20 z-40 backdrop-blur-md `}
     >
       <Link
         to="landing"

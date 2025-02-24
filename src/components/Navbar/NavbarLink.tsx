@@ -18,7 +18,7 @@ export const NavbarLink: React.FC<NavbarLinkProps> = ({
       id={`navlink-${navlink_id}`}
       to={link}
       smooth={true || is_smooth}
-      className={`border-b-2 border-purple px-3 py-1 transition-all hover:bg-purple hover:rounded-full hover:text-white cursor-pointer
+      className={`px-3 py-1 transition-all cursor-pointer hover:text-purple
           text-white
           sm:hover:text-darkTheme
           md:hover:text-darkTheme
