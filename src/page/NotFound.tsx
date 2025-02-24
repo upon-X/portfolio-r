@@ -1,18 +1,13 @@
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "../context/TranslationContext";
 import { Secret } from "../components/Secret/btnToSecret";
-import { useTheme } from "../context/ThemeContext";
 
 export default function NotFound() {
   const { language, content } = useTranslation();
-  const { theme } = useTheme();
+
   const { pathname } = useLocation();
   return (
-    <section
-      className={`h-[92vh] select-none ${
-        theme === "light" ? "" : "bg-darkTheme text-white"
-      }`}
-    >
+    <section className={`h-[92vh] select-none bg-darkTheme text-white`}>
       <div className="flex justify-center items-center flex-col py-4">
         <span className="text-[9.5rem] hover:text-purple transition-all">
           404
@@ -20,9 +15,7 @@ export default function NotFound() {
         <span className="text-[2rem]">" {pathname} "</span>
         <p className="text-[2rem]">{content?.notFound[language].title}</p>
         <div
-          className={`flex flex-col ${
-            theme === "light" ? "text-darkTheme hover:text-white" : "text-white"
-          } text-[1.2rem] mt-10 font-semibold `}
+          className={`flex flex-col "text-white" text-[1.2rem] mt-10 font-semibold `}
         >
           <Link
             aria-label="A link to the landing page"

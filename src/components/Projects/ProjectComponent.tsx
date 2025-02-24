@@ -1,6 +1,5 @@
 import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { useTranslation } from "../../context/TranslationContext";
-import { useTheme } from "../../context/ThemeContext";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import imageload from "/imageload2.webp";
 
@@ -11,7 +10,7 @@ type Props = {
 
 export const ProjectComponent = ({ projectIndex }: Props) => {
   const { content, language } = useTranslation();
-  const { theme } = useTheme();
+
   return (
     <div
       className=" grid grid-cols-2 min-h-[400px] select-none
@@ -62,8 +61,7 @@ export const ProjectComponent = ({ projectIndex }: Props) => {
             <span
               key={index}
               className={`border-2 border-purple rounded-md text-lg py-1 px-2 font-semibold 
-              sm:text-base
-              ${theme === "light" ? "text-gray" : "text-purple"}
+              sm:text-base text-purple
               hover:bg-purple hover:-translate-y-1 hover:text-white transition-all`}
             >
               {skill}

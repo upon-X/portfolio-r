@@ -1,6 +1,5 @@
 /* eslint-disable no-unsafe-optional-chaining */
 import { useTranslation } from "../../context/TranslationContext";
-import { useTheme } from "../../context/ThemeContext";
 
 interface Company {
   name: string;
@@ -17,7 +16,6 @@ interface Job {
 
 export const Experience = () => {
   const { content, language } = useTranslation();
-  const { theme } = useTheme();
 
   return (
     <div className="flex flex-col gap-6 items-start text-xl leading-8">
@@ -42,11 +40,7 @@ export const Experience = () => {
                 </a>{" "}
                 | {job.started} - {job.finished}
               </p>
-              <ul
-                className={`pl-10 ${
-                  theme === "light" ? "text-darkTheme" : "text-white"
-                }`}
-              >
+              <ul className={`pl-10 text-white`}>
                 {job.responsibilities.map((responsibility, index) => (
                   <li
                     key={index}

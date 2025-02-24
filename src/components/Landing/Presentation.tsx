@@ -1,9 +1,7 @@
 import { useTranslation } from "../../context/TranslationContext";
-import { useTheme } from "../../context/ThemeContext";
 
 export default function Presentation() {
   const { language, content } = useTranslation();
-  const { theme } = useTheme();
 
   return (
     <div className="flex flex-col items-center select-none">
@@ -15,7 +13,7 @@ export default function Presentation() {
         md:whitespace-normal md:leading-[1.1]
         sm:text-5xl sm:whitespace-normal sm:leading-[1.1] 
         drop-shadow-[0_5px_5px_rgba(0,0,0,0.25)]
-        ${theme === "light" ? "text-darkTheme" : "text-white"}
+        text-white
         `}
         >
           Valentino Micheloni

@@ -1,5 +1,5 @@
 import { useTranslation } from "../../context/TranslationContext";
-import { useTheme } from "../../context/ThemeContext";
+
 import { useEffect, useState } from "react";
 import { BtnsContainer } from "../btnsContainer";
 import { Link } from "react-scroll";
@@ -8,7 +8,7 @@ import { NavbarLink } from "./NavbarLink";
 export const Navbar = () => {
   const [menuNavRespo, setMenuNavRespo] = useState(false);
   const { language } = useTranslation();
-  const { theme } = useTheme();
+
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth > 768) {
@@ -30,7 +30,7 @@ export const Navbar = () => {
         to="landing"
         smooth={true}
         className={`border-2 rounded-full border-purple px-3 py-1 hover:bg-purple hover:text-white transition-all cursor-pointer
-        ${theme === "light" ? "" : "text-white"}
+        text-white
         `}
       >
         VM
@@ -64,9 +64,8 @@ export const Navbar = () => {
       {/* ---------------------------Menu mobile version--------------------------- */}
       <button
         onClick={() => setMenuNavRespo(!menuNavRespo)}
-        className={`hidden sm:block md:block border-2 border-purple rounded-full py-1.5 px-3 ${
-          theme === "light" ? " text-darkTheme" : "text-white"
-        } hover:bg-purple hover:text-white transition-all`}
+        className={`hidden sm:block md:block border-2 border-purple rounded-full py-1.5 px-3
+          text-white hover:bg-purple hover:text-white transition-all`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

@@ -1,16 +1,13 @@
 import { useTranslation } from "../context/TranslationContext";
 import { ContactForm } from "../components/Contact/ContactForm";
-import { useTheme } from "../context/ThemeContext";
 
 export default function Contact() {
   const { content, language } = useTranslation();
-  const { theme } = useTheme();
+
   return (
     <section
       id="contact"
-      className={`flex flex-col gap-10 items-center py-14 h-[80vh]
-    ${theme === "light" ? "" : "bg-darkTheme text-white"}
-    `}
+      className={`flex flex-col gap-10 items-center py-14 h-[80vh] bg-darkTheme text-white`}
     >
       <h3 className="flex flex-col gap-3 items-center uppercase text-4xl font-semibold">
         {content?.contact[language].title}

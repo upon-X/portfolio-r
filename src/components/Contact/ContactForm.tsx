@@ -3,13 +3,12 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "../../context/TranslationContext";
 import { sendAlert } from "../sweetAlerts";
-import { useTheme } from "../../context/ThemeContext";
 
 export const ContactForm = () => {
-  const serviceId = "service_kpadu0l";
-  const templateId = "template_4mme38a";
-  const publicKey = "Poy9PZERtei7dEa-6";
-  const { theme } = useTheme();
+  const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+  const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+  const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+
   const { language, content } = useTranslation();
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -28,7 +27,7 @@ export const ContactForm = () => {
       setIsSubmitting(true);
       emailjs
         .send(serviceId, templateId, templateParams, publicKey)
-        .then((res) => {
+        .then((res: Response | any) => {
           console.log(res);
           setName("");
           setEmail("");
@@ -36,7 +35,7 @@ export const ContactForm = () => {
           setIsSubmitting(false);
           sendAlert(language === "es" ? "bien" : "good");
         })
-        .catch((error) => {
+        .catch((error: Error | any) => {
           sendAlert(language === "es" ? "mal" : "bad");
           setIsSubmitting(false);
           console.error("Error", error);
@@ -52,18 +51,13 @@ export const ContactForm = () => {
       xl:w-[700px] xl:grid xl:grid-cols-2 xl:grid-row-3
       lg:w-[500px]
       md:w-[400px]
-      sm:w-[90vw] sm:px-4
-      ${theme === "light" ? "bg-[#f5f5f5]" : "bg-[#2c2c2c]"}
+      sm:w-[90vw] sm:px-4 bg-[#2c2c2c]
       `}
     >
       <label className="flex flex-col gap-1 w-full">
         {content?.contact[language].form.name}
         <input
-          className={`text-lg rounded-md border ${
-            theme === "light"
-              ? "bg-[#ffffff] border-[#e7e7e7]"
-              : "bg-darkTheme border-[#818181]"
-          } focus:outline-purple outline-purple`}
+          className={`text-lg rounded-md border bg-darkTheme border-[#818181]   focus:outline-purple outline-purple`}
           type="text"
           id="form_name"
           name="form_name"
@@ -81,12 +75,8 @@ export const ContactForm = () => {
               ? !email.includes("@")
                 ? "border-inputWrong focus:outline-inputWrong"
                 : "border-inputRight focus:outline-inputRight"
-              : theme === "light"
-              ? "border-[#e7e7e7]"
               : "border-[#818181]"
-          } ${
-            theme === "light" ? "bg-[#ffffff]" : "bg-darkTheme"
-          } focus:outline-purple outline-purple`}
+          } bg-darkTheme focus:outline-purple outline-purple`}
           type="email"
           id="form_email"
           name="form_email"
@@ -107,15 +97,11 @@ export const ContactForm = () => {
         </span>
         <textarea
           className={`text-lg rounded-md min-h-[200px] max-h-[200px] outline-purple focus:outline-purple p-2 resize-none border
-          ${theme === "light" ? "bg-[#ffffff]" : "bg-darkTheme"} ${
+          bg-darkTheme ${
             message
               ? message.length === 600
                 ? "border-[#ff8f44] outline-[#ff8f44] focus:outline-[#ff8f44]"
-                : theme === "light"
-                ? "border-[#e7e7e7]"
                 : "border-[#818181]"
-              : theme === "light"
-              ? "border-[#e7e7e7]"
               : "border-[#818181]"
           }
           `}
